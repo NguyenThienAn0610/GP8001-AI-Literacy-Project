@@ -114,6 +114,29 @@ Existing model files for models not selected are left unchanged.
 
 ## 6. Test the supplied example profile
 
+The shortest command is:
+
+```powershell
+.\predict.cmd
+```
+
+It defaults to:
+
+```text
+Model:  models\logistic_regression.joblib
+Input:  data\example_profiles.csv
+Output: predictions\quick_recommendations.csv
+Top-k:  3
+```
+
+To override the model, input, and output:
+
+```powershell
+.\predict.cmd random_forest data\my_profiles.csv predictions\my_results.csv
+```
+
+The full Python command remains available:
+
 ```powershell
 .\.venv\Scripts\python.exe src\predict_career.py `
     --model models\logistic_regression.joblib `
