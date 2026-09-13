@@ -100,6 +100,22 @@ The `--model`, `--models`, and `--all-models` options are mutually exclusive.
 
 ## Generate top-3 career recommendations
 
+Quickest option from the project root:
+
+```powershell
+.\predict.cmd
+```
+
+This uses Logistic Regression with `data\example_profiles.csv`, prints the
+top-three recommendations, and saves them to
+`predictions\quick_recommendations.csv`.
+
+Optionally provide a model name, input CSV, and output CSV:
+
+```powershell
+.\predict.cmd random_forest data\my_profiles.csv predictions\my_results.csv
+```
+
 Prepare a CSV with the same 18 input columns as `data/example_profiles.csv`.
 It must not require a `Suggested_Career_Path` value.
 

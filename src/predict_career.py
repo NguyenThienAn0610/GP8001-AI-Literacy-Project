@@ -65,7 +65,16 @@ def add_ranked_recommendations(
 
 def main() -> None:
     args = parse_args()
-    frame = pd.read_csv(args.input)
+    frame = pd.read_csv(args.input, skipinitialspace=True)
+    frame.columns = frame.columns.str.strip()
+    if frame.columns.duplicated().any():
+        duplicates = sorted(set(frame.columns[frame.columns.duplicated()]))
+        raise ValueError(
+            f"Input data contains duplicate columns after trimming whitespace: "
+            f"{', '.join(duplicates)}"
+        )
+    text_columns = frame.select_dtypes(include=["object", "string"]).columns
+    frame[text_columns] = frame[text_columns].apply(lambda column: column.str.strip())
     validate_features(frame)
 
     model = joblib.load(args.model)
