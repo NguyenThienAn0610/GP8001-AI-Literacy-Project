@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "search_trials": 90,
+  "fold_results": 35,
+  "outer_test_predictions_per_model": 15000,
+  "inner_outer_indices_disjoint": true,
+  "selection_uses_only_inner_validation": true,
+  "original_baseline_accuracies_reproduced": true,
+  "metrics_recomputed_from_saved_predictions": true,
+  "trials_reaching_epoch_limit": 0,
+  "search_training_seconds": 360.87209520029137,
+  "max_parameters_tested": 821270,
+  "comparison_scope": "Descriptive fold and paired-error comparisons, not a significance test"
+}

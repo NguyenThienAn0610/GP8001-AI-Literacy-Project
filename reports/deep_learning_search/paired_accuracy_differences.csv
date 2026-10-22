@@ -1,0 +1,8 @@
+model,accuracy_difference_pp,folds_better,folds_equal,folds_worse,correct_only_this_model,correct_only_logistic_regression,both_correct,both_wrong
+deep_mlp,-0.5000000000000004,0,0,5,2982,3057,1866,7095
+residual_network,-1.206666666666667,1,0,4,2765,2946,1977,7312
+field_transformer,-0.5933333333333324,0,0,5,3047,3136,1787,7030
+inner_selected_network,-0.7533333333333325,0,0,5,2974,3087,1836,7103
+three_family_ensemble,-0.7733333333333325,0,0,5,2767,2883,2040,7310
+logistic_regression,0.0,0,5,0,0,0,4923,10077
+original_mlp,-0.8666666666666666,1,0,4,2829,2959,1964,7248

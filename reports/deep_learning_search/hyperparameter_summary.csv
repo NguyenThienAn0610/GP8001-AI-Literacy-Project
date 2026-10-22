@@ -1,0 +1,19 @@
+id,family,lr,dropout,weight_decay,batch_size,scheduler,encoding,capacity,smoothing,hidden,validation_accuracy_mean,validation_macro_f1_mean,selected_folds,parameters_min,parameters_max,epochs_run_mean,width,blocks,heads
+deep_mlp_01,deep_mlp,0.0003,0.1,0.001,256,constant,binary,base,0.0,"[256, 128, 64]",0.3281666666666666,0.2703795773995413,0,68310,68310,20.6,,,
+deep_mlp_02,deep_mlp,0.001,0.1,0.001,256,constant,binary,base,0.0,"[256, 128, 64]",0.3304166666666667,0.2912624512092566,0,68310,68310,23.0,,,
+deep_mlp_03,deep_mlp,0.003,0.1,0.001,256,constant,binary,base,0.0,"[256, 128, 64]",0.33099999999999996,0.29484231163887525,1,68310,68310,26.0,,,
+deep_mlp_04,deep_mlp,0.001,0.2,0.01,512,plateau,binary,wide,0.0,"[512, 256, 128]",0.3320833333333333,0.2779388940457558,1,218518,218518,17.2,,,
+deep_mlp_05,deep_mlp,0.0003,0.3,0.1,512,cosine,tfidf,deep,0.05,"[512, 256, 128, 64, 32]",0.32958333333333334,0.17716513424747143,1,226934,226934,28.6,,,
+deep_mlp_06,deep_mlp,0.003,0.2,0.01,512,plateau,tfidf,base,0.0,"[256, 128, 64]",0.33308333333333334,0.2731632682146592,2,68310,68310,18.0,,,
+residual_network_01,residual_network,0.0003,0.1,0.001,256,constant,binary,base,0.0,,0.333,0.3021022000347037,1,147862,147862,22.4,128.0,2.0,
+residual_network_02,residual_network,0.001,0.1,0.001,256,constant,binary,base,0.0,,0.33425000000000005,0.30163541023597107,1,147862,147862,20.4,128.0,2.0,
+residual_network_03,residual_network,0.003,0.1,0.001,256,constant,binary,base,0.0,,0.3333333333333333,0.27978160659972334,1,147862,147862,21.0,128.0,2.0,
+residual_network_04,residual_network,0.001,0.2,0.01,512,plateau,binary,wide,0.0,,0.3285,0.27195666412726155,0,821270,821270,17.8,256.0,3.0,
+residual_network_05,residual_network,0.0003,0.3,0.1,512,cosine,tfidf,deep,0.05,,0.33291666666666664,0.27399376904908557,1,280214,280214,30.8,128.0,4.0,
+residual_network_06,residual_network,0.003,0.2,0.01,512,plateau,tfidf,base,0.0,,0.33199999999999996,0.2503228002216447,1,147862,147862,18.8,128.0,2.0,
+field_transformer_01,field_transformer,0.0003,0.1,0.001,256,constant,binary,base,0.0,,0.33833333333333326,0.23642174160464696,2,29878,29878,28.6,32.0,2.0,4.0
+field_transformer_02,field_transformer,0.001,0.1,0.001,256,constant,binary,base,0.0,,0.33433333333333337,0.20950942477492324,0,29878,29878,19.0,32.0,2.0,4.0
+field_transformer_03,field_transformer,0.003,0.1,0.001,256,constant,binary,base,0.0,,0.33525,0.24848804604613592,2,29878,29878,26.6,32.0,2.0,4.0
+field_transformer_04,field_transformer,0.001,0.2,0.01,512,plateau,binary,wide,0.0,,0.3338333333333333,0.23317478277687806,1,108886,108886,22.8,64.0,2.0,4.0
+field_transformer_05,field_transformer,0.0003,0.3,0.1,512,cosine,tfidf,deep,0.05,,0.3325,0.19637082248409843,0,55286,55286,35.6,32.0,4.0,4.0
+field_transformer_06,field_transformer,0.003,0.2,0.01,512,plateau,tfidf,base,0.0,,0.3309166666666667,0.18759617533877618,0,29878,29878,26.4,32.0,2.0,4.0

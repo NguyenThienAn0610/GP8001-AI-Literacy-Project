@@ -1,146 +1,131 @@
-# GP8001 AI Literacy Project
+# GP8001 AI Literacy: Career Recommendations
 
-This project trains multiclass classifiers to predict `Suggested_Career_Path`
-from education, skills, interests, experience, and work-preference data.
+This course project predicts `Suggested_Career_Path` from a person's education,
+skills, interests, experience, and work preferences. It returns a ranked career
+shortlist and compares traditional machine learning with deep learning models.
 
-## Dataset findings
+The dataset contains **15,000 profiles, 18 input fields, and 22 career labels**.
+Results measure agreement with those labels, not real-world career suitability.
 
-- 15,000 rows and 18 input features
-- 22 near-balanced career classes
-- Missing values occur in `Certifications`, `Past_Jobs_Internships`, and
-  `Achievements`; the pipeline converts them to an explicit `missing` token.
-- Comma-separated skills, languages, and certifications are split into
-  field-aware tokens before binary or TF-IDF encoding.
+## Quick start
 
-The selected models were compared with stratified five-fold cross-validation
-(`random_state=42`). Macro-F1 is the primary metric because it gives equal
-weight to every career class.
-
-| Rank | Model | CV Accuracy | CV Macro-F1 | Why include it |
-|---:|---|---:|---:|---|
-| 1 | Logistic Regression | 0.3282 | 0.3248 | Best tuned result; `C=16` preserves weak secondary signals. |
-| 2 | Random Forest | 0.3249 | 0.3195 | Binary unigram features reduce sensitivity to noisy combinations. |
-| 3 | Extra Trees | 0.3225 | 0.3173 | Binary unigram features improve both accuracy and macro-F1. |
-
-Ranked recommendation performance:
-
-| Model | Top-1 | Top-2 | Top-3 | Top-4 |
-|---|---:|---:|---:|---:|
-| Logistic Regression | 0.3282 | 0.6483 | **0.9649** | 0.9987 |
-| Random Forest | 0.3249 | 0.6434 | 0.9634 | 1.0000 |
-| Extra Trees | 0.3225 | 0.6411 | 0.9618 | 1.0000 |
-
-### Why accuracy stops near 33%
-
-The raw data makes `Fields_of_Interest` the only strong predictor. Each interest
-maps to three possible careers, except `Software Development`, which maps to
-four. Within each interest group, the career labels are distributed almost
-uniformly and the remaining features are close to random. A five-fold lookup
-using only the most common career per interest reaches 0.3299 accuracy but only
-0.1578 macro-F1 because it never predicts most careers.
-
-The tuned models are therefore close to the honest accuracy ceiling while still
-predicting all 22 career classes. Predictions should be treated as suggestions,
-not definitive career advice. Meaningfully higher accuracy requires data in
-which skills, qualifications, experience, or preferences actually distinguish
-careers within the same interest group.
-
-### Tuning changes
-
-- Extra Trees: TF-IDF bigrams replaced with binary unigrams.
-- Random Forest: TF-IDF bigrams replaced with binary unigrams.
-- Logistic Regression: regularization parameter `C` increased from 4 to 16.
-- Evaluation increased from three-fold to five-fold stratified validation.
-
-## Install
-
-Python 3.10 or later is recommended.
+Run these commands in PowerShell from the project root. Use **Python 3.11 or
+later**, as required by the pinned scikit-learn version. The existing environment
+was tested with Python 3.14.7. PyTorch is optional and is only needed for the
+deep learning benchmark.
 
 ```powershell
 python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
-
-Required Python packages:
-
-- `pandas` — CSV loading and output
-- `numpy` — numeric operations
-- `scikit-learn` — preprocessing, models, splitting, and metrics
-- `joblib` — saving and loading trained pipelines
-
-## Train models
-
-Train all three models; both commands are equivalent:
-
-```powershell
-python src/train_models.py
-python src/train_models.py --all-models
-```
-
-This writes serialized pipelines to `models/` and evaluation files to
-`reports/`. Each saved pipeline contains its preprocessing, which prevents
-training/prediction feature mismatches.
-
-Train one specific model:
-
-```powershell
-python src/train_models.py --model logistic_regression
-python src/train_models.py --model random_forest
-python src/train_models.py --model extra_trees
-```
-
-Train a selected group of models:
-
-```powershell
-python src/train_models.py --models logistic_regression random_forest
-```
-
-The `--model`, `--models`, and `--all-models` options are mutually exclusive.
-
-## Generate top-3 career recommendations
-
-Quickest option from the project root:
-
-```powershell
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv\Scripts\python.exe src/train_models.py --model logistic_regression
 .\predict.cmd
 ```
 
-This uses Logistic Regression with `data\example_profiles.csv`, prints the
-top-three recommendations, and saves them to
-`predictions\quick_recommendations.csv`.
+If `python` is unavailable, use the Windows `py` launcher to create the virtual
+environment. The commands use its interpreter directly; activation is optional.
+Skip training if `models/logistic_regression.joblib` already exists.
 
-Optionally provide a model name, input CSV, and output CSV:
+`predict.cmd` reads [the example profile](data/example_profiles.csv), prints
+three recommendations, and writes `predictions/quick_recommendations.csv`.
+
+## Predict for your own profiles
+
+Create a CSV using the same 18 input column names as the example. Each row is one
+profile; no target label is needed. Quote comma-separated skills or other lists
+so they remain in one CSV cell. Missing text values become a `missing` token;
+missing numeric values use medians learned during training.
 
 ```powershell
-.\predict.cmd random_forest data\my_profiles.csv predictions\my_results.csv
+.\predict.cmd logistic_regression data/my_profiles.csv predictions/my_results.csv
 ```
 
-Prepare a CSV with the same 18 input columns as `data/example_profiles.csv`.
-It must not require a `Suggested_Career_Path` value.
+For more control, call the Python script directly:
 
 ```powershell
-python src/predict_career.py `
+.venv\Scripts\python.exe src/predict_career.py `
   --model models/logistic_regression.joblib `
   --input data/example_profiles.csv `
-  --output predictions/career_predictions.csv
-```
-
-The output contains three ranked career names and scores:
-
-- `Recommendation_1` and `Recommendation_1_Score`
-- `Recommendation_2` and `Recommendation_2_Score`
-- `Recommendation_3` and `Recommendation_3_Score`
-
-Use `--top-k` to request a different number of recommendations:
-
-```powershell
-python src/predict_career.py `
-  --model models/logistic_regression.joblib `
-  --input data/example_profiles.csv `
+  --output predictions/career_predictions.csv `
   --top-k 3
 ```
 
-The training report includes cross-validated top-2, top-3, and top-4 accuracy
-for every model. Logistic Regression is recommended for ranked output because
-it produced the strongest five-fold top-1 and macro-F1 results.
+The output retains the input fields and adds `Recommendation_1` through
+`Recommendation_3`, each with a corresponding `_Score` column. Scores are model
+probabilities, not validated probabilities of career success.
+
+## Train and compare models
+
+```powershell
+# Train all three saved-model options.
+.venv\Scripts\python.exe src/train_models.py
+
+# Or select a subset.
+.venv\Scripts\python.exe src/train_models.py --models logistic_regression random_forest
+```
+
+Available models are `logistic_regression`, `random_forest`, and `extra_trees`.
+The script evaluates each using five stratified folds with seed 42, then fits
+the final pipeline on all rows. Preprocessing is fitted separately inside each
+fold and saved with the final model.
+
+Outputs include `models/<model>.joblib`, per-model classification reports, and
+`reports/model_comparison.csv`. A run replaces the selected model files and
+writes a comparison containing only that run's models. Use `--model-dir` and
+`--report-dir` to keep a separate run. Use `--help` on any script for its options.
+
+## What the results show
+
+These are mean scores across the same five outer folds. The neural models use
+an inner validation split to select settings within each outer training fold.
+
+| Model | Top-1 accuracy | Macro-F1 | Top-3 accuracy |
+|---|---:|---:|---:|
+| Logistic Regression | **32.82%** | **0.3248** | **96.49%** |
+| Random Forest | 32.49% | 0.3195 | 96.34% |
+| Extra Trees | 32.25% | 0.3173 | 96.18% |
+| Tuned deep MLP | 32.32% | 0.2439 | 95.48% |
+| Tuned field Transformer | 32.23% | 0.2353 | 96.47% |
+
+Sources: [traditional model results](reports/model_comparison.csv) and
+[deep learning results](reports/deep_learning_search/model_comparison.csv).
+Logistic Regression remains the default because it achieved the strongest
+Top-1 and macro-F1 among the evaluated approaches.
+
+- **Top-1:** the first predicted career matches the recorded label.
+- **Top-3:** the recorded label appears anywhere in the three recommendations.
+- **Macro-F1:** average per-career F1, giving every career equal weight. F1
+  balances precision and recall; a higher value is better.
+
+The large Top-1/Top-3 gap comes mainly from the dataset's interest groups. Six
+of the seven groups contain three career labels; Software Development contains
+four. Models identify the group well, but the other features provide limited
+evidence for choosing one career within it. High Top-3 coverage therefore does
+not imply equally strong first-choice prediction.
+
+The deep learning search tested 18 configurations over five outer folds, varying
+architecture, learning rate, regularization, and scheduling. It did not improve
+the best Top-1 or macro-F1 result. See [experiment details](docs/experiments.md)
+for the full comparison, architecture specifications, feature relevance
+analysis, limitations, and commands to reproduce or audit the results.
+
+## Project layout
+
+| Path | Purpose |
+|---|---|
+| `src/career_ml.py` | Shared input schema, preprocessing, and saved-model definitions |
+| `src/train_models.py`, `src/predict_career.py` | Training and prediction commands |
+| `src/evaluation.py`, `src/experiment_models.py`, `src/neural_models.py` | Shared evaluation and experiment code |
+| `src/benchmark_*.py`, `src/analyze_*.py`, `src/summarize_deep_learning.py` | Benchmarks, feature diagnostics, and result audit |
+| `data/` | Raw dataset and example prediction input |
+| `models/`, `predictions/`, `reports/` | Saved pipelines, recommendations, and evaluation evidence |
+| `presentations/` | Project slides |
+| `tests/` | Regression checks for preprocessing, evaluation, and feature selection |
+| `archive/` | Original prototype retained for reference |
+
+The current deck is [AI Application and Results](presentations/GP8001_GE2_AI_Application_Results.pptx).
+
+Run the regression checks with:
+
+```powershell
+.venv\Scripts\python.exe -m unittest discover -s tests -v
+```

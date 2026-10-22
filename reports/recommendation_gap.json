@@ -1,0 +1,175 @@
+{
+  "method": {
+    "command": "python src/analyze_recommendation_gap.py --folds 5 --seed 42",
+    "data_path": "data/raw/Career_Path_Dataset_with_Career.csv",
+    "data_sha256": "1f8032a2bdef11d637d6545087c886c9317af68d43b1feea942e907e79a7cde8",
+    "python_version": "3.14.7",
+    "pandas_version": "3.0.5",
+    "numpy_version": "2.5.2",
+    "sklearn_version": "1.9.0",
+    "folds": 5,
+    "stratified_by": "Suggested_Career_Path",
+    "shuffle": true,
+    "random_state": 42,
+    "baseline": "Rank careers by frequency within Fields_of_Interest using training-fold rows only.",
+    "unseen_interest_fallback": "Global career frequencies from the same training fold.",
+    "ties": "Alphabetical ascending career label after descending training frequency.",
+    "macro_f1": "Unweighted mean across all 22 observed classes; undefined per-class F1 is zero.",
+    "standard_deviation": "Population standard deviation across folds (ddof=0), matching train_models.py."
+  },
+  "dataset": {
+    "rows": 15000,
+    "input_features": 18,
+    "career_classes": 22,
+    "interest_groups": 7,
+    "class_counts": {
+      "AI Researcher": 688,
+      "Backend Developer": 558,
+      "Business Analyst": 705,
+      "Business Manager": 733,
+      "Cybersecurity Analyst": 716,
+      "Data Analyst": 719,
+      "Data Scientist": 716,
+      "Deep Learning Engineer": 714,
+      "Digital Marketing Specialist": 706,
+      "Ethical Hacker": 689,
+      "Frontend Developer": 578,
+      "Full Stack Developer": 557,
+      "Graphic Designer": 682,
+      "Machine Learning Engineer": 701,
+      "Marketing Executive": 765,
+      "Operations Manager": 699,
+      "Product Designer": 714,
+      "Project Manager": 724,
+      "SEO Analyst": 717,
+      "Security Engineer": 726,
+      "Software Engineer": 508,
+      "UI/UX Designer": 685
+    },
+    "smallest_class_count": 508,
+    "largest_class_count": 765,
+    "largest_to_smallest_class_ratio": 1.5059055118110236,
+    "uniform_random_22_class_top1_reference": 0.045454545454545456,
+    "uniform_random_22_class_top3_reference": 0.13636363636363635,
+    "interest_counts": {
+      "AI/ML": 2103,
+      "Cybersecurity": 2131,
+      "Data Science": 2140,
+      "Design": 2081,
+      "Management": 2156,
+      "Marketing": 2188,
+      "Software Development": 2201
+    },
+    "careers_per_interest": {
+      "AI/ML": 3,
+      "Cybersecurity": 3,
+      "Data Science": 3,
+      "Design": 3,
+      "Management": 3,
+      "Marketing": 3,
+      "Software Development": 4
+    },
+    "every_career_occurs_in_one_interest_group": true,
+    "software_development_rows": 2201,
+    "software_development_share": 0.14673333333333333,
+    "data_science_distribution": [
+      {
+        "Fields_of_Interest": "Data Science",
+        "Suggested_Career_Path": "Business Analyst",
+        "count": 705,
+        "interest_rows": 2140,
+        "within_interest_percentage": 32.94392523364486
+      },
+      {
+        "Fields_of_Interest": "Data Science",
+        "Suggested_Career_Path": "Data Analyst",
+        "count": 719,
+        "interest_rows": 2140,
+        "within_interest_percentage": 33.598130841121495
+      },
+      {
+        "Fields_of_Interest": "Data Science",
+        "Suggested_Career_Path": "Data Scientist",
+        "count": 716,
+        "interest_rows": 2140,
+        "within_interest_percentage": 33.45794392523365
+      }
+    ]
+  },
+  "interest_only_cross_validation": {
+    "fold_metrics": [
+      {
+        "fold": 1,
+        "train_rows": 12000,
+        "test_rows": 3000,
+        "top1_accuracy": 0.33,
+        "macro_f1": 0.1577650916949436,
+        "top3_accuracy": 0.9663333333333334
+      },
+      {
+        "fold": 2,
+        "train_rows": 12000,
+        "test_rows": 3000,
+        "top1_accuracy": 0.33,
+        "macro_f1": 0.15778163918798746,
+        "top3_accuracy": 0.966
+      },
+      {
+        "fold": 3,
+        "train_rows": 12000,
+        "test_rows": 3000,
+        "top1_accuracy": 0.33,
+        "macro_f1": 0.1577837194873103,
+        "top3_accuracy": 0.966
+      },
+      {
+        "fold": 4,
+        "train_rows": 12000,
+        "test_rows": 3000,
+        "top1_accuracy": 0.32966666666666666,
+        "macro_f1": 0.15767058440003517,
+        "top3_accuracy": 0.966
+      },
+      {
+        "fold": 5,
+        "train_rows": 12000,
+        "test_rows": 3000,
+        "top1_accuracy": 0.33,
+        "macro_f1": 0.15776356785449017,
+        "top3_accuracy": 0.9663333333333334
+      }
+    ],
+    "mean": {
+      "top1_accuracy": 0.3299333333333333,
+      "macro_f1": 0.15775292052495335,
+      "top3_accuracy": 0.9661333333333333
+    },
+    "std": {
+      "top1_accuracy": 0.00013333333333334087,
+      "macro_f1": 4.1985898014618354e-05,
+      "top3_accuracy": 0.00016329931618558162
+    },
+    "out_of_fold_metrics": {
+      "top1_accuracy": 0.32993333333333336,
+      "macro_f1": 0.1577531472973954,
+      "top3_accuracy": 0.9661333333333333
+    },
+    "distinct_top1_predictions_across_all_folds": 7,
+    "top1_correct_rows": 4949,
+    "top3_correct_rows": 14492,
+    "all_top3_errors_in_software_development": true
+  },
+  "uniform_within_interest_illustration": {
+    "assumptions": "Interest group is identified correctly; careers within each group are equally likely and cannot otherwise be distinguished. This is an illustrative approximation, not an empirically proven upper bound.",
+    "weighted_top1": 0.32110555555555553,
+    "weighted_top3": 0.9633166666666667,
+    "top3_formula": "(1 - Software Development share) * 1 + Software Development share * 3/4"
+  },
+  "interpretation_limits": [
+    "Top-1 requires the saved label to be ranked first; Top-3 only requires it to appear anywhere in a three-item shortlist.",
+    "Six interest groups contain three careers; one contains four. A model can identify the career family yet struggle to rank within it.",
+    "Nearly uniform labels within each interest group alone do not prove that remaining features contain no useful signal.",
+    "Comparison against full-feature models supports examining limited within-group signal, but this diagnostic does not establish a Bayes accuracy ceiling.",
+    "Results measure reproduction of dataset labels under stratified cross-validation, not career suitability or real-world recommendation success."
+  ]
+}

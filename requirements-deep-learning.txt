@@ -1,0 +1,4 @@
+# Optional dependencies for src/benchmark_deep_learning.py.
+# Install base requirements.txt first. Choose the PyTorch index for your hardware.
+# This experiment used the official CUDA 13.0 wheel on an NVIDIA Ada GPU.
+torch==2.13.0

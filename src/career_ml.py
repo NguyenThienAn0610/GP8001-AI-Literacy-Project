@@ -171,3 +171,14 @@ def validate_features(frame: pd.DataFrame) -> None:
     missing = sorted(set(FEATURE_COLUMNS) - set(frame.columns))
     if missing:
         raise ValueError(f"Input data is missing required columns: {', '.join(missing)}")
+
+
+def load_training_data(path) -> pd.DataFrame:
+    """Read labelled profiles and reject missing inputs or career labels."""
+    data = pd.read_csv(path)
+    validate_features(data)
+    if TARGET_COLUMN not in data.columns:
+        raise ValueError(f"Training data must contain '{TARGET_COLUMN}'.")
+    if data[TARGET_COLUMN].isna().any():
+        raise ValueError(f"'{TARGET_COLUMN}' contains missing labels.")
+    return data
