@@ -28,6 +28,44 @@ Skip training if `models/logistic_regression.joblib` already exists.
 `predict.cmd` reads [the example profile](data/example_profiles.csv), prints
 three recommendations, and writes `predictions/quick_recommendations.csv`.
 
+## Try the web demo
+
+After installing the base requirements and training Logistic Regression, start
+the browser interface from the project root:
+
+```powershell
+.\demo.cmd
+```
+
+Open **http://127.0.0.1:8000**. Select **Try an example**, then **Explore my
+careers** to get three recommendations from the saved model. You can edit the
+profile, expand the education and experience sections, and download the results
+as a CSV. Only the main interest is required; blank fields use the pipeline's
+existing missing-value handling.
+
+The demo uses the same prediction function as the command-line application.
+There are no additional packages or frontend build steps. To use another port:
+
+```powershell
+.venv\Scripts\python.exe src/demo_app.py --port 8001
+```
+
+Keep the terminal running while presenting, and press **Ctrl+C** to stop.
+Profiles are processed in memory and are not saved by the server. CSV downloads
+are saved only when you request them in the browser.
+
+The implementation is a small example of a real application flow:
+**profile form → JSON API → saved preprocessing and model → ranked results**.
+The interface is in `demo/`; `src/demo_app.py` serves it and exposes
+`GET /api/config` and `POST /api/predict`. The prediction request has the shape
+`{"profile": {"Age": 24, "Fields_of_Interest": "Data Science", ...}}`, with all
+18 field names present and `null` or empty strings for optional blanks.
+
+This is a local demonstration server. A public service would need production
+hosting, HTTPS, appropriate access controls, and evaluation on representative
+real-world profiles. The displayed scores describe the model's career labels,
+not a person's chance of success.
+
 ## Predict for your own profiles
 
 Create a CSV using the same 18 input column names as the example. Each row is one
@@ -114,6 +152,7 @@ analysis, limitations, and commands to reproduce or audit the results.
 |---|---|
 | `src/career_ml.py` | Shared input schema, preprocessing, and saved-model definitions |
 | `src/train_models.py`, `src/predict_career.py` | Training and prediction commands |
+| `demo/`, `src/demo_app.py`, `demo.cmd` | Browser demo, prediction API, and Windows launcher |
 | `src/evaluation.py`, `src/experiment_models.py`, `src/neural_models.py` | Shared evaluation and experiment code |
 | `src/benchmark_*.py`, `src/analyze_*.py`, `src/summarize_deep_learning.py` | Benchmarks, feature diagnostics, and result audit |
 | `data/` | Raw dataset and example prediction input |
