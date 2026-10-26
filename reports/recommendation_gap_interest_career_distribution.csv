@@ -1,0 +1,23 @@
+Fields_of_Interest,Suggested_Career_Path,count,interest_rows,within_interest_percentage
+AI/ML,AI Researcher,688,2103,32.715168806466956
+AI/ML,Deep Learning Engineer,714,2103,33.951497860199716
+AI/ML,Machine Learning Engineer,701,2103,33.33333333333333
+Cybersecurity,Cybersecurity Analyst,716,2131,33.5992491787893
+Cybersecurity,Ethical Hacker,689,2131,32.3322383857344
+Cybersecurity,Security Engineer,726,2131,34.0685124354763
+Data Science,Business Analyst,705,2140,32.94392523364486
+Data Science,Data Analyst,719,2140,33.598130841121495
+Data Science,Data Scientist,716,2140,33.45794392523365
+Design,Graphic Designer,682,2081,32.772705430081686
+Design,Product Designer,714,2081,34.31042767900048
+Design,UI/UX Designer,685,2081,32.91686689091783
+Management,Business Manager,733,2156,33.99814471243043
+Management,Operations Manager,699,2156,32.42115027829314
+Management,Project Manager,724,2156,33.58070500927644
+Marketing,Digital Marketing Specialist,706,2188,32.26691042047532
+Marketing,Marketing Executive,765,2188,34.963436928702016
+Marketing,SEO Analyst,717,2188,32.769652650822664
+Software Development,Backend Developer,558,2201,25.352112676056336
+Software Development,Frontend Developer,578,2201,26.260790549750112
+Software Development,Full Stack Developer,557,2201,25.306678782371648
+Software Development,Software Engineer,508,2201,23.0804179918219

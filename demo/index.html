@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore three career possibilities with the GP8001 career recommendation demo.">
+  <title>Pathfinder — Career Explorer</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Pathfinder home"><span class="brand-mark" aria-hidden="true">p.</span>pathfinder<span class="brand-dot">/</span></a>
+    <span class="project-label">GP8001 <span aria-hidden="true">·</span> INTERACTIVE DEMO</span>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">A LITTLE DIRECTION. MORE POSSIBILITIES.</p>
+        <h1 id="page-title">Explore your<br><em>next chapter.</em></h1>
+      </div>
+      <div class="intro-copy">
+        <p>Your interests and experiences are a starting point.<br class="desktop-break"> Turn them into three career paths to explore.</p>
+        <p class="intro-note">A shortlist for a conversation, not a career decision.</p>
+      </div>
+    </section>
+
+    <div id="startup-error" class="error-message" role="alert" hidden></div>
+    <div class="workspace">
+      <section class="profile-panel" aria-labelledby="profile-heading">
+        <div class="panel-heading">
+          <div><p class="eyebrow">YOUR STARTING POINT</p><h2 id="profile-heading">A little about you</h2></div>
+          <button id="example-button" type="button" class="button-secondary" disabled>Try an example <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="form-intro">Start with an interest. Add more detail, or load an example for a quick walkthrough.</p>
+        <form id="profile-form">
+          <fieldset id="profile-fields" disabled>
+            <legend class="sr-only">Career profile</legend>
+            <div id="field-groups"><p class="loading-message">Loading profile options…</p></div>
+          </fieldset>
+          <div class="form-actions">
+            <p id="form-status" class="form-status" role="status">Only your main interest is required.</p>
+            <button id="predict-button" type="submit" class="button-primary" disabled><span id="predict-label">Explore my careers</span><span aria-hidden="true">→</span></button>
+            <p id="request-error" class="error-message" role="alert" hidden></p>
+          </div>
+        </form>
+      </section>
+
+      <aside class="results-panel" aria-labelledby="results-heading" aria-busy="false">
+        <div class="result-heading">
+          <p class="eyebrow">POSSIBILITIES AHEAD</p>
+          <h2 id="results-heading">Your career shortlist</h2>
+          <p id="results-subtitle">Three suggestions, shaped by your profile.</p>
+        </div>
+        <div id="results-status" class="sr-only" role="status" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state">
+          <span class="empty-number" aria-hidden="true">03<span>↗</span></span>
+          <h3>A few paths worth exploring.</h3>
+          <p>Complete your profile, then select<br>“Explore my careers” to see your shortlist.</p>
+          <div class="empty-rule"></div>
+          <p class="empty-hint">Not sure where to start?<br>Try the example profile on the left.</p>
+        </div>
+        <div id="result-content" hidden>
+          <ol id="recommendation-list" class="recommendation-list"></ol>
+          <button id="download-button" class="download-button" type="button">Download my results <span aria-hidden="true">↓</span></button>
+          <details class="score-explanation">
+            <summary>What do the scores mean?</summary>
+            <p>A model score is the probability assigned to a career label by the trained model. It is not your chance of success or a measure of your ability. Scores for these three suggestions may not add up to 100%, because the model considers 22 careers.</p>
+            <p>In this dataset, interest is the strongest signal. A shortlist is more reliable than the first suggestion, and results have not been validated as real-world career advice.</p>
+          </details>
+          <div class="next-step"><p class="eyebrow">MAKE IT YOUR OWN</p><p>Compare the daily work, speak to someone in the field, or try a small project. Use this list to start exploring.</p></div>
+        </div>
+        <div class="results-footer"><span class="status-dot" aria-hidden="true"></span><span id="model-label">Powered by the project’s trained model</span></div>
+      </aside>
+    </div>
+    <footer class="page-footer"><p>Built for exploration. Profiles aren’t saved by this demo.</p><span>GP8001 · AI Literacy Project</span></footer>
+  </main>
+  <noscript><p class="error-message">Enable JavaScript to use the career profile form.</p></noscript>
+</body>
+</html>

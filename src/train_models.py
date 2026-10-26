@@ -8,15 +8,9 @@ import time
 from pathlib import Path
 
 import joblib
-import numpy as np
 import pandas as pd
 from sklearn.base import clone
-from sklearn.metrics import (
-    accuracy_score,
-    classification_report,
-    f1_score,
-    top_k_accuracy_score,
-)
+from sklearn.metrics import classification_report
 from sklearn.model_selection import StratifiedKFold
 
 from career_ml import (
@@ -24,8 +18,9 @@ from career_ml import (
     MODEL_FACTORIES,
     TARGET_COLUMN,
     make_pipeline,
-    validate_features,
+    load_training_data,
 )
+from evaluation import metric_values, summarize_folds
 
 
 def parse_args() -> argparse.Namespace:
@@ -74,12 +69,7 @@ def main() -> None:
     args = parse_args()
     model_names = selected_model_names(args)
     print(f"Selected model(s): {', '.join(model_names)}", flush=True)
-    data = pd.read_csv(args.data)
-    validate_features(data)
-    if TARGET_COLUMN not in data.columns:
-        raise ValueError(f"Training data must contain '{TARGET_COLUMN}'.")
-    if data[TARGET_COLUMN].isna().any():
-        raise ValueError(f"'{TARGET_COLUMN}' contains missing labels.")
+    data = load_training_data(args.data)
 
     X = data[FEATURE_COLUMNS]
     y = data[TARGET_COLUMN].astype(str)
@@ -98,12 +88,7 @@ def main() -> None:
         evaluation_pipeline = make_pipeline(model_name)
         started = time.perf_counter()
         predictions = pd.Series(index=y.index, dtype="object")
-        fold_accuracy: list[float] = []
-        fold_macro_f1: list[float] = []
-        fold_weighted_f1: list[float] = []
-        fold_top_2_accuracy: list[float] = []
-        fold_top_3_accuracy: list[float] = []
-        fold_top_4_accuracy: list[float] = []
+        fold_scores = []
 
         for train_indices, test_indices in folds.split(X, y):
             fold_pipeline = clone(evaluation_pipeline)
@@ -112,46 +97,16 @@ def main() -> None:
             fold_probabilities = fold_pipeline.predict_proba(X.iloc[test_indices])
             fold_labels = fold_pipeline.classes_
             predictions.iloc[test_indices] = fold_predictions
-            fold_accuracy.append(accuracy_score(y.iloc[test_indices], fold_predictions))
-            fold_macro_f1.append(
-                f1_score(y.iloc[test_indices], fold_predictions, average="macro")
-            )
-            fold_weighted_f1.append(
-                f1_score(y.iloc[test_indices], fold_predictions, average="weighted")
-            )
-            fold_top_2_accuracy.append(
-                top_k_accuracy_score(
-                    y.iloc[test_indices], fold_probabilities, k=2, labels=fold_labels
-                )
-            )
-            fold_top_3_accuracy.append(
-                top_k_accuracy_score(
-                    y.iloc[test_indices], fold_probabilities, k=3, labels=fold_labels
-                )
-            )
-            fold_top_4_accuracy.append(
-                top_k_accuracy_score(
-                    y.iloc[test_indices], fold_probabilities, k=4, labels=fold_labels
-                )
-            )
+            fold_scores.append(metric_values(
+                y.iloc[test_indices], fold_predictions, fold_probabilities, fold_labels,
+            ))
 
         cv_seconds = time.perf_counter() - started
 
         row = {
             "model": model_name,
             "cv_folds": args.cv_folds,
-            "cv_accuracy_mean": np.mean(fold_accuracy),
-            "cv_accuracy_std": np.std(fold_accuracy),
-            "cv_macro_f1_mean": np.mean(fold_macro_f1),
-            "cv_macro_f1_std": np.std(fold_macro_f1),
-            "cv_weighted_f1_mean": np.mean(fold_weighted_f1),
-            "cv_weighted_f1_std": np.std(fold_weighted_f1),
-            "cv_top_2_accuracy_mean": np.mean(fold_top_2_accuracy),
-            "cv_top_2_accuracy_std": np.std(fold_top_2_accuracy),
-            "cv_top_3_accuracy_mean": np.mean(fold_top_3_accuracy),
-            "cv_top_3_accuracy_std": np.std(fold_top_3_accuracy),
-            "cv_top_4_accuracy_mean": np.mean(fold_top_4_accuracy),
-            "cv_top_4_accuracy_std": np.std(fold_top_4_accuracy),
+            **summarize_folds(fold_scores, fold_scores[0], prefix="cv_"),
             "cv_seconds": cv_seconds,
         }
         metrics.append(row)
