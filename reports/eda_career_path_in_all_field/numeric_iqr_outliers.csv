@@ -1,0 +1,16 @@
+﻿column,q1,q3,iqr,lower_fence,upper_fence,outlier_count,outlier_pct_of_non_missing
+GPA,3.1052672685676885,4.361089901760435,1.2558226331927465,1.2215333187785689,6.244823851549555,0,0.0
+Extracurricular_Activities,2.0,7.0,5.0,-5.5,14.5,0,0.0
+Internships,0.0,2.0,2.0,-3.0,5.0,0,0.0
+Projects,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Leadership_Positions,0.0,1.0,1.0,-1.5,2.5,0,0.0
+Field_Specific_Courses,2.0,7.0,5.0,-5.5,14.5,0,0.0
+Research_Experience,0.0,1.0,1.0,-1.5,2.5,0,0.0
+Coding_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Communication_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Problem_Solving_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Teamwork_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Analytical_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Presentation_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Networking_Skills,1.0,3.0,2.0,-2.0,6.0,0,0.0
+Industry_Certifications,0.0,1.0,1.0,-1.5,2.5,0,0.0

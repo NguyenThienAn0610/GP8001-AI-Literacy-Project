@@ -1,0 +1,72 @@
+{
+  "source": "data\\raw\\dataset.csv",
+  "rows": 300000,
+  "columns": 15,
+  "numeric_columns": [
+    "Age",
+    "Years_Since_Graduation",
+    "GPA",
+    "Salary"
+  ],
+  "categorical_columns": [
+    "Country_of_Origin",
+    "Education_Level",
+    "Field_of_Study",
+    "Language_Proficiency",
+    "Visa_Type",
+    "Gender",
+    "University_Ranking",
+    "Region_of_Study",
+    "Internship_Experience",
+    "Employment_Status",
+    "Job_Sector"
+  ],
+  "multi_value_columns": [],
+  "configured_multi_value_columns_not_found": [
+    "Certifications",
+    "Languages_Known",
+    "Soft_Skills",
+    "Technical_Skills"
+  ],
+  "target": "Job_Sector",
+  "target_class_counts": {
+    "<Missing>": 143356,
+    "IT": 19716,
+    "Education": 19711,
+    "Other": 19699,
+    "Healthcare": 19666,
+    "Engineering": 19590,
+    "Retail": 19467,
+    "Consulting": 19457,
+    "Finance": 19338
+  },
+  "duplicates": {
+    "rows_in_duplicate_groups": 6,
+    "duplicate_rows_beyond_first": 3,
+    "feature_rows_in_duplicate_groups": 6,
+    "feature_profiles_with_conflicting_targets": 0
+  },
+  "association_matrix_columns": [
+    "Country_of_Origin",
+    "Education_Level",
+    "Field_of_Study",
+    "Language_Proficiency",
+    "Visa_Type",
+    "Gender",
+    "University_Ranking",
+    "Region_of_Study",
+    "Age",
+    "Years_Since_Graduation",
+    "GPA",
+    "Internship_Experience",
+    "Employment_Status",
+    "Salary",
+    "Job_Sector"
+  ],
+  "association_matrix_excluded_high_cardinality_columns": [],
+  "notes": {
+    "source_unchanged": true,
+    "text_analysis": "Leading/trailing whitespace trimmed; empty text treated as missing.",
+    "mixed_association_matrix": "Absolute Spearman for numeric-numeric, bias-corrected Cramer's V for categorical-categorical, and correlation ratio eta for mixed pairs."
+  }
+}

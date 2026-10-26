@@ -1,0 +1,5 @@
+﻿column,q1,q3,iqr,lower_fence,upper_fence,outlier_count,outlier_pct_of_non_missing
+Age,26.0,35.0,9.0,12.5,48.5,0,0.0
+Years_Since_Graduation,2.0,7.0,5.0,-5.5,14.5,0,0.0
+GPA,2.93,3.47,0.54,2.12,4.28,2036,0.0067866666666666665
+Salary,0.0,56634.0,56634.0,-84951.0,141585.0,0,0.0

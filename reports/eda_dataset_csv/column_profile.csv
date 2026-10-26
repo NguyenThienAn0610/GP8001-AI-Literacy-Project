@@ -1,0 +1,16 @@
+﻿column,pandas_dtype,role,rows,non_missing,missing,missing_pct,unique_non_missing,constant,whitespace_only_values,values_with_edge_whitespace
+Country_of_Origin,string,categorical,300000,300000,0,0.0,8,False,0,0
+Education_Level,string,categorical,300000,300000,0,0.0,4,False,0,0
+Field_of_Study,string,categorical,300000,300000,0,0.0,6,False,0,0
+Language_Proficiency,string,categorical,300000,300000,0,0.0,4,False,0,0
+Visa_Type,string,categorical,300000,300000,0,0.0,4,False,0,0
+Gender,string,categorical,300000,300000,0,0.0,3,False,0,0
+University_Ranking,string,categorical,300000,300000,0,0.0,3,False,0,0
+Region_of_Study,string,categorical,300000,300000,0,0.0,4,False,0,0
+Age,int64,numeric,300000,300000,0,0.0,18,False,0,0
+Years_Since_Graduation,int64,numeric,300000,300000,0,0.0,10,False,0,0
+GPA,float64,numeric,300000,300000,0,0.0,325,False,0,0
+Internship_Experience,string,categorical,300000,300000,0,0.0,2,False,0,0
+Employment_Status,string,categorical,300000,300000,0,0.0,3,False,0,0
+Salary,int64,numeric,300000,300000,0,0.0,60490,False,0,0
+Job_Sector,string,target,300000,156644,143356,0.47785333333333335,8,False,0,0

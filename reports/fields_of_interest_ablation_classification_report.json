@@ -1,0 +1,147 @@
+{
+  "AI Researcher": {
+    "precision": 0.05043227665706052,
+    "recall": 0.050872093023255814,
+    "f1-score": 0.05065123010130246,
+    "support": 688.0
+  },
+  "Backend Developer": {
+    "precision": 0.036988110964332896,
+    "recall": 0.05017921146953405,
+    "f1-score": 0.04258555133079848,
+    "support": 558.0
+  },
+  "Business Analyst": {
+    "precision": 0.06638418079096045,
+    "recall": 0.06666666666666667,
+    "f1-score": 0.06652512384996462,
+    "support": 705.0
+  },
+  "Business Manager": {
+    "precision": 0.04341534008683068,
+    "recall": 0.040927694406548434,
+    "f1-score": 0.042134831460674156,
+    "support": 733.0
+  },
+  "Cybersecurity Analyst": {
+    "precision": 0.045779685264663805,
+    "recall": 0.0446927374301676,
+    "f1-score": 0.045229681978798585,
+    "support": 716.0
+  },
+  "Data Analyst": {
+    "precision": 0.0375,
+    "recall": 0.03337969401947149,
+    "f1-score": 0.03532008830022075,
+    "support": 719.0
+  },
+  "Data Scientist": {
+    "precision": 0.05604719764011799,
+    "recall": 0.05307262569832402,
+    "f1-score": 0.054519368723098996,
+    "support": 716.0
+  },
+  "Deep Learning Engineer": {
+    "precision": 0.04823151125401929,
+    "recall": 0.04201680672268908,
+    "f1-score": 0.04491017964071856,
+    "support": 714.0
+  },
+  "Digital Marketing Specialist": {
+    "precision": 0.06156156156156156,
+    "recall": 0.05807365439093484,
+    "f1-score": 0.0597667638483965,
+    "support": 706.0
+  },
+  "Ethical Hacker": {
+    "precision": 0.0514820592823713,
+    "recall": 0.047895500725689405,
+    "f1-score": 0.04962406015037594,
+    "support": 689.0
+  },
+  "Frontend Developer": {
+    "precision": 0.031767955801104975,
+    "recall": 0.039792387543252594,
+    "f1-score": 0.03533026113671275,
+    "support": 578.0
+  },
+  "Full Stack Developer": {
+    "precision": 0.04954367666232073,
+    "recall": 0.06822262118491922,
+    "f1-score": 0.05740181268882175,
+    "support": 557.0
+  },
+  "Graphic Designer": {
+    "precision": 0.039764359351988215,
+    "recall": 0.039589442815249266,
+    "f1-score": 0.03967670830271859,
+    "support": 682.0
+  },
+  "Machine Learning Engineer": {
+    "precision": 0.0560875512995896,
+    "recall": 0.05848787446504993,
+    "f1-score": 0.05726256983240224,
+    "support": 701.0
+  },
+  "Marketing Executive": {
+    "precision": 0.043478260869565216,
+    "recall": 0.03398692810457516,
+    "f1-score": 0.03815113719735877,
+    "support": 765.0
+  },
+  "Operations Manager": {
+    "precision": 0.05061349693251534,
+    "recall": 0.04721030042918455,
+    "f1-score": 0.04885270170244264,
+    "support": 699.0
+  },
+  "Product Designer": {
+    "precision": 0.03236797274275979,
+    "recall": 0.02661064425770308,
+    "f1-score": 0.029208301306687164,
+    "support": 714.0
+  },
+  "Project Manager": {
+    "precision": 0.039634146341463415,
+    "recall": 0.03591160220994475,
+    "f1-score": 0.03768115942028986,
+    "support": 724.0
+  },
+  "SEO Analyst": {
+    "precision": 0.059375,
+    "recall": 0.05299860529986053,
+    "f1-score": 0.05600589535740604,
+    "support": 717.0
+  },
+  "Security Engineer": {
+    "precision": 0.040123456790123455,
+    "recall": 0.03581267217630854,
+    "f1-score": 0.03784570596797671,
+    "support": 726.0
+  },
+  "Software Engineer": {
+    "precision": 0.03402187120291616,
+    "recall": 0.05511811023622047,
+    "f1-score": 0.042073628850488355,
+    "support": 508.0
+  },
+  "UI/UX Designer": {
+    "precision": 0.05007153075822604,
+    "recall": 0.051094890510948905,
+    "f1-score": 0.05057803468208093,
+    "support": 685.0
+  },
+  "accuracy": 0.046533333333333336,
+  "macro avg": {
+    "precision": 0.046575963738840515,
+    "recall": 0.0469369438084772,
+    "f1-score": 0.04642430890135159,
+    "support": 15000.0
+  },
+  "weighted avg": {
+    "precision": 0.04688840383842336,
+    "recall": 0.046533333333333336,
+    "f1-score": 0.046425257422523084,
+    "support": 15000.0
+  }
+}

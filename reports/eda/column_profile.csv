@@ -1,0 +1,20 @@
+﻿column,pandas_dtype,role,rows,non_missing,missing,missing_pct,unique_non_missing,constant,whitespace_only_values,values_with_edge_whitespace
+Age,int64,numeric,15000,15000,0,0.0,13,False,0,0
+Gender,string,categorical,15000,15000,0,0.0,3,False,0,0
+Location,string,categorical,15000,15000,0,0.0,8,False,0,0
+Highest_qualification,string,categorical,15000,15000,0,0.0,8,False,0,0
+Stream,string,categorical,15000,15000,0,0.0,8,False,0,0
+Current_Academic_Level,string,categorical,15000,15000,0,0.0,3,False,0,0
+Grade_CGPA_Percentage,float64,numeric,15000,15000,0,0.0,4728,False,0,0
+Technical_Skills,string,multi-value categorical,15000,15000,0,0.0,585,False,0,0
+Soft_Skills,string,multi-value categorical,15000,15000,0,0.0,156,False,0,0
+Languages_Known,string,multi-value categorical,15000,15000,0,0.0,36,False,0,0
+Certifications,string,multi-value categorical,15000,9901,5099,0.3399333333333333,49,False,0,0
+Fields_of_Interest,string,categorical,15000,15000,0,0.0,7,False,0,0
+Preferred_Work_Style,string,categorical,15000,15000,0,0.0,4,False,0,0
+Work_Type_Interest,string,categorical,15000,15000,0,0.0,4,False,0,0
+Past_Jobs_Internships,string,categorical,15000,12462,2538,0.1692,5,False,0,0
+Achievements,string,categorical,15000,12468,2532,0.1688,5,False,0,0
+Skills_Gained,string,categorical,15000,15000,0,0.0,6,False,0,0
+Willing_to_Relocate,string,categorical,15000,15000,0,0.0,2,False,0,0
+Suggested_Career_Path,string,target,15000,15000,0,0.0,22,False,0,0

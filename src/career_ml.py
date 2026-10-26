@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from collections.abc import Callable
+from collections.abc import Callable, Iterable
 
 import numpy as np
 import pandas as pd
@@ -72,8 +72,17 @@ class ProfileTextTransformer(BaseEstimator, TransformerMixin):
         return np.asarray(documents)
 
 
-def make_preprocessor() -> ColumnTransformer:
+def make_preprocessor(
+    profile_columns: Iterable[str] | None = None,
+    numeric_columns: Iterable[str] | None = None,
+) -> ColumnTransformer:
     """Build preprocessing that can be serialized with each trained model."""
+    selected_profile_columns = list(
+        PROFILE_COLUMNS if profile_columns is None else profile_columns
+    )
+    selected_numeric_columns = list(
+        NUMERIC_COLUMNS if numeric_columns is None else numeric_columns
+    )
     profile_pipeline = Pipeline(
         steps=[
             ("profile_tokens", ProfileTextTransformer()),
@@ -97,12 +106,14 @@ def make_preprocessor() -> ColumnTransformer:
         ]
     )
 
-    return ColumnTransformer(
-        transformers=[
-            ("profile", profile_pipeline, PROFILE_COLUMNS),
-            ("numeric", numeric_pipeline, NUMERIC_COLUMNS),
-        ]
-    )
+    transformers: list[tuple[str, object, list[str]]] = []
+    if selected_profile_columns:
+        transformers.append(("profile", profile_pipeline, selected_profile_columns))
+    if selected_numeric_columns:
+        transformers.append(("numeric", numeric_pipeline, selected_numeric_columns))
+    if not transformers:
+        raise ValueError("At least one feature column is required.")
+    return ColumnTransformer(transformers=transformers)
 
 
 MODEL_FACTORIES: dict[str, Callable[[], BaseEstimator]] = {
@@ -149,15 +160,31 @@ MODEL_PREPROCESSOR_PARAMS: dict[str, dict[str, object]] = {
 }
 
 
-def make_pipeline(model_name: str) -> Pipeline:
+def make_pipeline(
+    model_name: str, *, excluded_columns: Iterable[str] = ()
+) -> Pipeline:
     """Create one of the three benchmarked end-to-end classifiers."""
     if model_name not in MODEL_FACTORIES:
         valid = ", ".join(MODEL_FACTORIES)
         raise ValueError(f"Unknown model '{model_name}'. Choose from: {valid}")
 
-    preprocessor = make_preprocessor().set_params(
-        **MODEL_PREPROCESSOR_PARAMS[model_name]
+    excluded = set(excluded_columns)
+    unknown = sorted(excluded - set(FEATURE_COLUMNS))
+    if unknown:
+        raise ValueError(f"Cannot exclude unknown feature columns: {', '.join(unknown)}")
+    selected_profile_columns = [
+        column for column in PROFILE_COLUMNS if column not in excluded
+    ]
+    selected_numeric_columns = [
+        column for column in NUMERIC_COLUMNS if column not in excluded
+    ]
+
+    preprocessor = make_preprocessor(
+        profile_columns=selected_profile_columns,
+        numeric_columns=selected_numeric_columns,
     )
+    if selected_profile_columns:
+        preprocessor.set_params(**MODEL_PREPROCESSOR_PARAMS[model_name])
     return Pipeline(
         steps=[
             ("preprocess", preprocessor),

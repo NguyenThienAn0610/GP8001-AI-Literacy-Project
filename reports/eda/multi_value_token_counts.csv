@@ -1,0 +1,30 @@
+﻿column,rank,token,count,pct_of_rows
+Certifications,1,<Missing>,5099,0.3399333333333333
+Certifications,2,Full Stack Development,2223,0.1482
+Certifications,3,Machine Learning,2168,0.14453333333333335
+Certifications,4,Azure,2151,0.1434
+Certifications,5,AWS,2103,0.1402
+Certifications,6,Python,2095,0.13966666666666666
+Certifications,7,Data Science,2093,0.13953333333333334
+Certifications,8,GCP,2076,0.1384
+Languages_Known,1,Telugu,3798,0.2532
+Languages_Known,2,Kannada,3785,0.25233333333333335
+Languages_Known,3,Tamil,3780,0.252
+Languages_Known,4,English,3747,0.2498
+Languages_Known,5,Marathi,3736,0.24906666666666666
+Languages_Known,6,Hindi,3650,0.24333333333333335
+Soft_Skills,1,Time Management,5089,0.33926666666666666
+Soft_Skills,2,Leadership,5058,0.3372
+Soft_Skills,3,Creativity,4987,0.3324666666666667
+Soft_Skills,4,Communication,4979,0.33193333333333336
+Soft_Skills,5,Problem Solving,4942,0.3294666666666667
+Soft_Skills,6,Teamwork,4931,0.3287333333333333
+Technical_Skills,1,HTML/CSS,3386,0.22573333333333334
+Technical_Skills,2,C++,3367,0.22446666666666668
+Technical_Skills,3,SQL,3364,0.22426666666666667
+Technical_Skills,4,React,3344,0.22293333333333334
+Technical_Skills,5,JavaScript,3334,0.22226666666666667
+Technical_Skills,6,Python,3300,0.22
+Technical_Skills,7,Node.js,3293,0.21953333333333333
+Technical_Skills,8,Data Analysis,3275,0.21833333333333332
+Technical_Skills,9,Java,3246,0.2164

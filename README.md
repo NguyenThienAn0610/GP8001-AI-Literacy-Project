@@ -68,6 +68,29 @@ Required Python packages:
 - `numpy` — numeric operations
 - `scikit-learn` — preprocessing, models, splitting, and metrics
 - `joblib` — saving and loading trained pipelines
+- `matplotlib` and `seaborn` — exploratory data visualizations
+
+## Analyze the raw dataset
+
+Generate data-quality checks, numeric and categorical distributions, Pearson
+and Spearman correlations, mixed-type association measures, target
+associations, token frequencies for comma-separated fields, and PNG charts:
+
+```powershell
+python src/analyze_dataset.py
+```
+
+The default output directory is `reports/eda/`. It contains a concise Markdown
+summary, CSV tables for further analysis, and a `plots/` directory. The raw
+dataset is read-only and is not modified.
+
+To analyze another compatible CSV or change the output directory:
+
+```powershell
+python src/analyze_dataset.py `
+  --data data/raw/Career_Path_Dataset_with_Career.csv `
+  --output-dir reports/eda
+```
 
 ## Train models
 
@@ -144,3 +167,59 @@ python src/predict_career.py `
 The training report includes cross-validated top-2, top-3, and top-4 accuracy
 for every model. Logistic Regression is recommended for ranked output because
 it produced the strongest five-fold top-1 and macro-F1 results.
+
+## Run a feature-ablation experiment
+
+Measure how the recommended model performs when `Fields_of_Interest` is
+removed, while preserving the original trained model and reports:
+
+```powershell
+python src/run_feature_ablation.py
+```
+
+The command writes a comparison to `reports/fields_of_interest_ablation.csv`
+and saves the fitted ablation model separately under `models/`.
+
+## Train the all-fields dataset
+
+The `career_path_in_all_field.csv` dataset uses a separate schema with `Career`
+as its target. Train and evaluate all supported models with out-of-fold
+predictions:
+
+```powershell
+python src/train_all_fields_models.py
+```
+
+Generate ranked recommendations from one of the saved models:
+
+```powershell
+python src/predict_all_fields_career.py `
+  --model models/all_fields/logistic_regression.joblib `
+  --input data/raw/career_path_in_all_field.csv `
+  --output predictions/all_fields_recommendations.csv
+```
+
+## Evaluate `dataset.csv`
+
+Treat `Job_Sector` as the target, discard rows without a sector label, and
+evaluate deployable pre-outcome features with five-fold out-of-fold
+predictions:
+
+```powershell
+python src/evaluate_dataset_csv.py
+```
+
+The evaluator deliberately excludes `Employment_Status` and `Salary`, because
+they describe an observed employment outcome rather than information available
+when recommending a career. Results, out-of-fold predictions, and a
+model-versus-chance chart are written to `reports/dataset_csv/`; fitted
+pipelines are written to `models/dataset_csv/`.
+
+Generate the full EDA report and plots for this dataset with:
+
+```powershell
+python src/analyze_dataset.py `
+  --data data/raw/dataset.csv `
+  --target Job_Sector `
+  --output-dir reports/eda_dataset_csv
+```

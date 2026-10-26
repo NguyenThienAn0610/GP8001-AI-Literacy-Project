@@ -1,0 +1,639 @@
+﻿column,target_value,token,count,pct_within_target
+Certifications,AI Researcher,<Missing>,249,0.36191860465116277
+Certifications,AI Researcher,AWS,91,0.13226744186046513
+Certifications,AI Researcher,Azure,90,0.1308139534883721
+Certifications,AI Researcher,Data Science,82,0.11918604651162791
+Certifications,AI Researcher,Full Stack Development,92,0.13372093023255813
+Certifications,AI Researcher,GCP,102,0.14825581395348839
+Certifications,AI Researcher,Machine Learning,114,0.16569767441860464
+Certifications,AI Researcher,Python,92,0.13372093023255813
+Certifications,Backend Developer,<Missing>,187,0.33512544802867383
+Certifications,Backend Developer,AWS,83,0.14874551971326164
+Certifications,Backend Developer,Azure,88,0.15770609318996415
+Certifications,Backend Developer,Data Science,83,0.14874551971326164
+Certifications,Backend Developer,Full Stack Development,80,0.14336917562724014
+Certifications,Backend Developer,GCP,72,0.12903225806451613
+Certifications,Backend Developer,Machine Learning,94,0.16845878136200718
+Certifications,Backend Developer,Python,63,0.11290322580645161
+Certifications,Business Analyst,<Missing>,231,0.3276595744680851
+Certifications,Business Analyst,AWS,89,0.12624113475177304
+Certifications,Business Analyst,Azure,96,0.13617021276595745
+Certifications,Business Analyst,Data Science,117,0.16595744680851063
+Certifications,Business Analyst,Full Stack Development,111,0.1574468085106383
+Certifications,Business Analyst,GCP,90,0.1276595744680851
+Certifications,Business Analyst,Machine Learning,107,0.15177304964539007
+Certifications,Business Analyst,Python,110,0.15602836879432624
+Certifications,Business Manager,<Missing>,239,0.32605729877216916
+Certifications,Business Manager,AWS,94,0.12824010914051842
+Certifications,Business Manager,Azure,105,0.1432469304229195
+Certifications,Business Manager,Data Science,97,0.13233287858117326
+Certifications,Business Manager,Full Stack Development,138,0.1882673942701228
+Certifications,Business Manager,GCP,95,0.1296043656207367
+Certifications,Business Manager,Machine Learning,100,0.1364256480218281
+Certifications,Business Manager,Python,106,0.1446111869031378
+Certifications,Cybersecurity Analyst,<Missing>,255,0.35614525139664804
+Certifications,Cybersecurity Analyst,AWS,104,0.1452513966480447
+Certifications,Cybersecurity Analyst,Azure,100,0.13966480446927373
+Certifications,Cybersecurity Analyst,Data Science,117,0.1634078212290503
+Certifications,Cybersecurity Analyst,Full Stack Development,96,0.1340782122905028
+Certifications,Cybersecurity Analyst,GCP,99,0.138268156424581
+Certifications,Cybersecurity Analyst,Machine Learning,93,0.12988826815642457
+Certifications,Cybersecurity Analyst,Python,101,0.14106145251396648
+Certifications,Data Analyst,<Missing>,213,0.29624478442280944
+Certifications,Data Analyst,AWS,121,0.16828929068150209
+Certifications,Data Analyst,Azure,104,0.14464534075104313
+Certifications,Data Analyst,Data Science,110,0.15299026425591097
+Certifications,Data Analyst,Full Stack Development,108,0.1502086230876217
+Certifications,Data Analyst,GCP,98,0.13630041724617525
+Certifications,Data Analyst,Machine Learning,114,0.15855354659248957
+Certifications,Data Analyst,Python,109,0.15159944367176634
+Certifications,Data Scientist,<Missing>,256,0.3575418994413408
+Certifications,Data Scientist,AWS,89,0.12430167597765363
+Certifications,Data Scientist,Azure,99,0.138268156424581
+Certifications,Data Scientist,Data Science,87,0.12150837988826815
+Certifications,Data Scientist,Full Stack Development,103,0.14385474860335196
+Certifications,Data Scientist,GCP,90,0.12569832402234637
+Certifications,Data Scientist,Machine Learning,113,0.15782122905027932
+Certifications,Data Scientist,Python,102,0.1424581005586592
+Certifications,Deep Learning Engineer,<Missing>,247,0.34593837535014005
+Certifications,Deep Learning Engineer,AWS,113,0.15826330532212884
+Certifications,Deep Learning Engineer,Azure,96,0.13445378151260504
+Certifications,Deep Learning Engineer,Data Science,93,0.13025210084033614
+Certifications,Deep Learning Engineer,Full Stack Development,102,0.14285714285714285
+Certifications,Deep Learning Engineer,GCP,103,0.14425770308123248
+Certifications,Deep Learning Engineer,Machine Learning,131,0.18347338935574228
+Certifications,Deep Learning Engineer,Python,96,0.13445378151260504
+Certifications,Digital Marketing Specialist,<Missing>,254,0.3597733711048159
+Certifications,Digital Marketing Specialist,AWS,94,0.13314447592067988
+Certifications,Digital Marketing Specialist,Azure,95,0.13456090651558072
+Certifications,Digital Marketing Specialist,Data Science,96,0.1359773371104816
+Certifications,Digital Marketing Specialist,Full Stack Development,107,0.15155807365439095
+Certifications,Digital Marketing Specialist,GCP,94,0.13314447592067988
+Certifications,Digital Marketing Specialist,Machine Learning,104,0.14730878186968838
+Certifications,Digital Marketing Specialist,Python,93,0.13172804532577903
+Certifications,Ethical Hacker,<Missing>,224,0.3251088534107402
+Certifications,Ethical Hacker,AWS,86,0.12481857764876633
+Certifications,Ethical Hacker,Azure,105,0.15239477503628446
+Certifications,Ethical Hacker,Data Science,87,0.1262699564586357
+Certifications,Ethical Hacker,Full Stack Development,112,0.1625544267053701
+Certifications,Ethical Hacker,GCP,101,0.14658925979680695
+Certifications,Ethical Hacker,Machine Learning,87,0.1262699564586357
+Certifications,Ethical Hacker,Python,119,0.17271407837445574
+Certifications,Frontend Developer,<Missing>,191,0.3304498269896194
+Certifications,Frontend Developer,AWS,72,0.1245674740484429
+Certifications,Frontend Developer,Azure,88,0.1522491349480969
+Certifications,Frontend Developer,Data Science,75,0.12975778546712802
+Certifications,Frontend Developer,Full Stack Development,85,0.14705882352941177
+Certifications,Frontend Developer,GCP,82,0.14186851211072665
+Certifications,Frontend Developer,Machine Learning,90,0.15570934256055363
+Certifications,Frontend Developer,Python,81,0.14013840830449828
+Certifications,Full Stack Developer,<Missing>,184,0.3303411131059246
+Certifications,Full Stack Developer,AWS,84,0.15080789946140036
+Certifications,Full Stack Developer,Azure,85,0.1526032315978456
+Certifications,Full Stack Developer,Data Science,77,0.13824057450628366
+Certifications,Full Stack Developer,Full Stack Development,82,0.14721723518850988
+Certifications,Full Stack Developer,GCP,80,0.1436265709156194
+Certifications,Full Stack Developer,Machine Learning,73,0.1310592459605027
+Certifications,Full Stack Developer,Python,72,0.12926391382405744
+Certifications,Graphic Designer,<Missing>,239,0.35043988269794724
+Certifications,Graphic Designer,AWS,112,0.16422287390029325
+Certifications,Graphic Designer,Azure,95,0.13929618768328444
+Certifications,Graphic Designer,Data Science,93,0.13636363636363635
+Certifications,Graphic Designer,Full Stack Development,99,0.14516129032258066
+Certifications,Graphic Designer,GCP,90,0.13196480938416422
+Certifications,Graphic Designer,Machine Learning,84,0.12316715542521994
+Certifications,Graphic Designer,Python,94,0.1378299120234604
+Certifications,Machine Learning Engineer,<Missing>,218,0.31098430813124106
+Certifications,Machine Learning Engineer,AWS,104,0.14835948644793154
+Certifications,Machine Learning Engineer,Azure,103,0.14693295292439373
+Certifications,Machine Learning Engineer,Data Science,111,0.15834522111269614
+Certifications,Machine Learning Engineer,Full Stack Development,104,0.14835948644793154
+Certifications,Machine Learning Engineer,GCP,103,0.14693295292439373
+Certifications,Machine Learning Engineer,Machine Learning,94,0.1340941512125535
+Certifications,Machine Learning Engineer,Python,102,0.14550641940085593
+Certifications,Marketing Executive,<Missing>,275,0.35947712418300654
+Certifications,Marketing Executive,AWS,99,0.12941176470588237
+Certifications,Marketing Executive,Azure,119,0.15555555555555556
+Certifications,Marketing Executive,Data Science,97,0.12679738562091503
+Certifications,Marketing Executive,Full Stack Development,112,0.14640522875816994
+Certifications,Marketing Executive,GCP,111,0.1450980392156863
+Certifications,Marketing Executive,Machine Learning,102,0.13333333333333333
+Certifications,Marketing Executive,Python,94,0.12287581699346405
+Certifications,Operations Manager,<Missing>,218,0.31187410586552217
+Certifications,Operations Manager,AWS,93,0.13304721030042918
+Certifications,Operations Manager,Azure,109,0.15593705293276108
+Certifications,Operations Manager,Data Science,116,0.1659513590844063
+Certifications,Operations Manager,Full Stack Development,99,0.14163090128755365
+Certifications,Operations Manager,GCP,102,0.1459227467811159
+Certifications,Operations Manager,Machine Learning,96,0.13733905579399142
+Certifications,Operations Manager,Python,112,0.16022889842632332
+Certifications,Product Designer,<Missing>,252,0.35294117647058826
+Certifications,Product Designer,AWS,85,0.11904761904761904
+Certifications,Product Designer,Azure,103,0.14425770308123248
+Certifications,Product Designer,Data Science,105,0.14705882352941177
+Certifications,Product Designer,Full Stack Development,96,0.13445378151260504
+Certifications,Product Designer,GCP,98,0.13725490196078433
+Certifications,Product Designer,Machine Learning,111,0.15546218487394958
+Certifications,Product Designer,Python,88,0.12324929971988796
+Certifications,Project Manager,<Missing>,253,0.3494475138121547
+Certifications,Project Manager,AWS,98,0.13535911602209943
+Certifications,Project Manager,Azure,119,0.1643646408839779
+Certifications,Project Manager,Data Science,85,0.11740331491712708
+Certifications,Project Manager,Full Stack Development,119,0.1643646408839779
+Certifications,Project Manager,GCP,95,0.13121546961325967
+Certifications,Project Manager,Machine Learning,88,0.12154696132596685
+Certifications,Project Manager,Python,91,0.12569060773480664
+Certifications,SEO Analyst,<Missing>,248,0.3458856345885635
+Certifications,SEO Analyst,AWS,102,0.14225941422594143
+Certifications,SEO Analyst,Azure,110,0.15341701534170155
+Certifications,SEO Analyst,Data Science,106,0.14783821478382148
+Certifications,SEO Analyst,Full Stack Development,104,0.14504881450488144
+Certifications,SEO Analyst,GCP,87,0.12133891213389121
+Certifications,SEO Analyst,Machine Learning,103,0.14365411436541142
+Certifications,SEO Analyst,Python,95,0.13249651324965134
+Certifications,Security Engineer,<Missing>,237,0.32644628099173556
+Certifications,Security Engineer,AWS,110,0.15151515151515152
+Certifications,Security Engineer,Azure,104,0.14325068870523416
+Certifications,Security Engineer,Data Science,110,0.15151515151515152
+Certifications,Security Engineer,Full Stack Development,92,0.12672176308539945
+Certifications,Security Engineer,GCP,120,0.1652892561983471
+Certifications,Security Engineer,Machine Learning,97,0.13360881542699724
+Certifications,Security Engineer,Python,117,0.16115702479338842
+Certifications,Software Engineer,<Missing>,178,0.35039370078740156
+Certifications,Software Engineer,AWS,74,0.14566929133858267
+Certifications,Software Engineer,Azure,45,0.08858267716535433
+Certifications,Software Engineer,Data Science,73,0.1437007874015748
+Certifications,Software Engineer,Full Stack Development,76,0.14960629921259844
+Certifications,Software Engineer,GCP,69,0.13582677165354332
+Certifications,Software Engineer,Machine Learning,81,0.1594488188976378
+Certifications,Software Engineer,Python,73,0.1437007874015748
+Certifications,UI/UX Designer,<Missing>,251,0.36642335766423356
+Certifications,UI/UX Designer,AWS,106,0.15474452554744525
+Certifications,UI/UX Designer,Azure,93,0.13576642335766423
+Certifications,UI/UX Designer,Data Science,76,0.11094890510948906
+Certifications,UI/UX Designer,Full Stack Development,106,0.15474452554744525
+Certifications,UI/UX Designer,GCP,95,0.1386861313868613
+Certifications,UI/UX Designer,Machine Learning,92,0.1343065693430657
+Certifications,UI/UX Designer,Python,85,0.12408759124087591
+Languages_Known,AI Researcher,English,186,0.2703488372093023
+Languages_Known,AI Researcher,Hindi,170,0.24709302325581395
+Languages_Known,AI Researcher,Kannada,177,0.25726744186046513
+Languages_Known,AI Researcher,Marathi,167,0.24273255813953487
+Languages_Known,AI Researcher,Tamil,168,0.2441860465116279
+Languages_Known,AI Researcher,Telugu,167,0.24273255813953487
+Languages_Known,Backend Developer,English,117,0.20967741935483872
+Languages_Known,Backend Developer,Hindi,148,0.26523297491039427
+Languages_Known,Backend Developer,Kannada,145,0.25985663082437277
+Languages_Known,Backend Developer,Marathi,146,0.2616487455197133
+Languages_Known,Backend Developer,Tamil,146,0.2616487455197133
+Languages_Known,Backend Developer,Telugu,132,0.23655913978494625
+Languages_Known,Business Analyst,English,172,0.24397163120567375
+Languages_Known,Business Analyst,Hindi,169,0.2397163120567376
+Languages_Known,Business Analyst,Kannada,159,0.225531914893617
+Languages_Known,Business Analyst,Marathi,181,0.25673758865248225
+Languages_Known,Business Analyst,Tamil,178,0.2524822695035461
+Languages_Known,Business Analyst,Telugu,176,0.24964539007092199
+Languages_Known,Business Manager,English,184,0.25102319236016374
+Languages_Known,Business Manager,Hindi,176,0.24010914051841747
+Languages_Known,Business Manager,Kannada,196,0.2673942701227831
+Languages_Known,Business Manager,Marathi,182,0.24829467939972716
+Languages_Known,Business Manager,Tamil,189,0.2578444747612551
+Languages_Known,Business Manager,Telugu,193,0.26330150068212826
+Languages_Known,Cybersecurity Analyst,English,184,0.2569832402234637
+Languages_Known,Cybersecurity Analyst,Hindi,187,0.2611731843575419
+Languages_Known,Cybersecurity Analyst,Kannada,169,0.2360335195530726
+Languages_Known,Cybersecurity Analyst,Marathi,152,0.2122905027932961
+Languages_Known,Cybersecurity Analyst,Tamil,203,0.2835195530726257
+Languages_Known,Cybersecurity Analyst,Telugu,172,0.24022346368715083
+Languages_Known,Data Analyst,English,185,0.2573018080667594
+Languages_Known,Data Analyst,Hindi,191,0.26564673157162727
+Languages_Known,Data Analyst,Kannada,154,0.2141863699582754
+Languages_Known,Data Analyst,Marathi,173,0.24061196105702365
+Languages_Known,Data Analyst,Tamil,189,0.26286509040333794
+Languages_Known,Data Analyst,Telugu,182,0.25312934631432543
+Languages_Known,Data Scientist,English,178,0.24860335195530725
+Languages_Known,Data Scientist,Hindi,163,0.2276536312849162
+Languages_Known,Data Scientist,Kannada,179,0.25
+Languages_Known,Data Scientist,Marathi,180,0.25139664804469275
+Languages_Known,Data Scientist,Tamil,199,0.2779329608938548
+Languages_Known,Data Scientist,Telugu,167,0.23324022346368714
+Languages_Known,Deep Learning Engineer,English,180,0.25210084033613445
+Languages_Known,Deep Learning Engineer,Hindi,158,0.22128851540616246
+Languages_Known,Deep Learning Engineer,Kannada,183,0.25630252100840334
+Languages_Known,Deep Learning Engineer,Marathi,198,0.2773109243697479
+Languages_Known,Deep Learning Engineer,Tamil,190,0.2661064425770308
+Languages_Known,Deep Learning Engineer,Telugu,160,0.22408963585434175
+Languages_Known,Digital Marketing Specialist,English,162,0.22946175637393768
+Languages_Known,Digital Marketing Specialist,Hindi,165,0.23371104815864022
+Languages_Known,Digital Marketing Specialist,Kannada,179,0.2535410764872521
+Languages_Known,Digital Marketing Specialist,Marathi,175,0.24787535410764872
+Languages_Known,Digital Marketing Specialist,Tamil,194,0.2747875354107649
+Languages_Known,Digital Marketing Specialist,Telugu,178,0.2521246458923513
+Languages_Known,Ethical Hacker,English,167,0.24238026124818576
+Languages_Known,Ethical Hacker,Hindi,179,0.2597968069666183
+Languages_Known,Ethical Hacker,Kannada,191,0.2772133526850508
+Languages_Known,Ethical Hacker,Marathi,178,0.25834542815674894
+Languages_Known,Ethical Hacker,Tamil,157,0.22786647314949202
+Languages_Known,Ethical Hacker,Telugu,176,0.25544267053701014
+Languages_Known,Frontend Developer,English,135,0.23356401384083045
+Languages_Known,Frontend Developer,Hindi,138,0.23875432525951557
+Languages_Known,Frontend Developer,Kannada,152,0.2629757785467128
+Languages_Known,Frontend Developer,Marathi,147,0.25432525951557095
+Languages_Known,Frontend Developer,Tamil,135,0.23356401384083045
+Languages_Known,Frontend Developer,Telugu,169,0.29238754325259514
+Languages_Known,Full Stack Developer,English,142,0.25493716337522443
+Languages_Known,Full Stack Developer,Hindi,133,0.23877917414721722
+Languages_Known,Full Stack Developer,Kannada,135,0.24236983842010773
+Languages_Known,Full Stack Developer,Marathi,145,0.26032315978456017
+Languages_Known,Full Stack Developer,Tamil,135,0.24236983842010773
+Languages_Known,Full Stack Developer,Telugu,144,0.2585278276481149
+Languages_Known,Graphic Designer,English,184,0.2697947214076246
+Languages_Known,Graphic Designer,Hindi,161,0.23607038123167157
+Languages_Known,Graphic Designer,Kannada,164,0.2404692082111437
+Languages_Known,Graphic Designer,Marathi,163,0.23900293255131966
+Languages_Known,Graphic Designer,Tamil,169,0.24780058651026393
+Languages_Known,Graphic Designer,Telugu,164,0.2404692082111437
+Languages_Known,Machine Learning Engineer,English,186,0.2653352353780314
+Languages_Known,Machine Learning Engineer,Hindi,169,0.24108416547788872
+Languages_Known,Machine Learning Engineer,Kannada,192,0.2738944365192582
+Languages_Known,Machine Learning Engineer,Marathi,171,0.24393723252496433
+Languages_Known,Machine Learning Engineer,Tamil,184,0.2624821683309558
+Languages_Known,Machine Learning Engineer,Telugu,145,0.20684736091298145
+Languages_Known,Marketing Executive,English,214,0.2797385620915033
+Languages_Known,Marketing Executive,Hindi,184,0.24052287581699347
+Languages_Known,Marketing Executive,Kannada,196,0.25620915032679736
+Languages_Known,Marketing Executive,Marathi,196,0.25620915032679736
+Languages_Known,Marketing Executive,Tamil,184,0.24052287581699347
+Languages_Known,Marketing Executive,Telugu,195,0.2549019607843137
+Languages_Known,Operations Manager,English,168,0.24034334763948498
+Languages_Known,Operations Manager,Hindi,172,0.24606580829756797
+Languages_Known,Operations Manager,Kannada,176,0.25178826895565093
+Languages_Known,Operations Manager,Marathi,186,0.26609442060085836
+Languages_Known,Operations Manager,Tamil,165,0.23605150214592274
+Languages_Known,Operations Manager,Telugu,185,0.2646638054363376
+Languages_Known,Product Designer,English,173,0.242296918767507
+Languages_Known,Product Designer,Hindi,167,0.2338935574229692
+Languages_Known,Product Designer,Kannada,190,0.2661064425770308
+Languages_Known,Product Designer,Marathi,173,0.242296918767507
+Languages_Known,Product Designer,Tamil,167,0.2338935574229692
+Languages_Known,Product Designer,Telugu,195,0.27310924369747897
+Languages_Known,Project Manager,English,175,0.24171270718232044
+Languages_Known,Project Manager,Hindi,181,0.25
+Languages_Known,Project Manager,Kannada,163,0.22513812154696133
+Languages_Known,Project Manager,Marathi,174,0.24033149171270718
+Languages_Known,Project Manager,Tamil,199,0.27486187845303867
+Languages_Known,Project Manager,Telugu,191,0.2638121546961326
+Languages_Known,SEO Analyst,English,186,0.2594142259414226
+Languages_Known,SEO Analyst,Hindi,179,0.2496513249651325
+Languages_Known,SEO Analyst,Kannada,169,0.23570432357043236
+Languages_Known,SEO Analyst,Marathi,181,0.2524407252440725
+Languages_Known,SEO Analyst,Tamil,171,0.2384937238493724
+Languages_Known,SEO Analyst,Telugu,192,0.26778242677824265
+Languages_Known,Security Engineer,English,173,0.23829201101928374
+Languages_Known,Security Engineer,Hindi,170,0.23415977961432508
+Languages_Known,Security Engineer,Kannada,194,0.26721763085399447
+Languages_Known,Security Engineer,Marathi,169,0.2327823691460055
+Languages_Known,Security Engineer,Tamil,172,0.2369146005509642
+Languages_Known,Security Engineer,Telugu,226,0.31129476584022037
+Languages_Known,Software Engineer,English,126,0.24803149606299213
+Languages_Known,Software Engineer,Hindi,118,0.23228346456692914
+Languages_Known,Software Engineer,Kannada,136,0.2677165354330709
+Languages_Known,Software Engineer,Marathi,136,0.2677165354330709
+Languages_Known,Software Engineer,Tamil,127,0.25
+Languages_Known,Software Engineer,Telugu,114,0.22440944881889763
+Languages_Known,UI/UX Designer,English,170,0.24817518248175183
+Languages_Known,UI/UX Designer,Hindi,172,0.2510948905109489
+Languages_Known,UI/UX Designer,Kannada,186,0.27153284671532846
+Languages_Known,UI/UX Designer,Marathi,163,0.23795620437956205
+Languages_Known,UI/UX Designer,Tamil,159,0.2321167883211679
+Languages_Known,UI/UX Designer,Telugu,175,0.25547445255474455
+Soft_Skills,AI Researcher,Communication,245,0.3561046511627907
+Soft_Skills,AI Researcher,Creativity,226,0.32848837209302323
+Soft_Skills,AI Researcher,Leadership,234,0.34011627906976744
+Soft_Skills,AI Researcher,Problem Solving,235,0.34156976744186046
+Soft_Skills,AI Researcher,Teamwork,225,0.32703488372093026
+Soft_Skills,AI Researcher,Time Management,209,0.30377906976744184
+Soft_Skills,Backend Developer,Communication,197,0.35304659498207885
+Soft_Skills,Backend Developer,Creativity,186,0.3333333333333333
+Soft_Skills,Backend Developer,Leadership,183,0.3279569892473118
+Soft_Skills,Backend Developer,Problem Solving,183,0.3279569892473118
+Soft_Skills,Backend Developer,Teamwork,168,0.3010752688172043
+Soft_Skills,Backend Developer,Time Management,197,0.35304659498207885
+Soft_Skills,Business Analyst,Communication,232,0.32907801418439714
+Soft_Skills,Business Analyst,Creativity,235,0.3333333333333333
+Soft_Skills,Business Analyst,Leadership,244,0.34609929078014184
+Soft_Skills,Business Analyst,Problem Solving,234,0.33191489361702126
+Soft_Skills,Business Analyst,Teamwork,234,0.33191489361702126
+Soft_Skills,Business Analyst,Time Management,234,0.33191489361702126
+Soft_Skills,Business Manager,Communication,213,0.29058663028649384
+Soft_Skills,Business Manager,Creativity,233,0.3178717598908595
+Soft_Skills,Business Manager,Leadership,235,0.32060027285129605
+Soft_Skills,Business Manager,Problem Solving,247,0.3369713506139154
+Soft_Skills,Business Manager,Teamwork,236,0.3219645293315143
+Soft_Skills,Business Manager,Time Management,247,0.3369713506139154
+Soft_Skills,Cybersecurity Analyst,Communication,229,0.3198324022346369
+Soft_Skills,Cybersecurity Analyst,Creativity,219,0.3058659217877095
+Soft_Skills,Cybersecurity Analyst,Leadership,260,0.36312849162011174
+Soft_Skills,Cybersecurity Analyst,Problem Solving,252,0.35195530726256985
+Soft_Skills,Cybersecurity Analyst,Teamwork,227,0.3170391061452514
+Soft_Skills,Cybersecurity Analyst,Time Management,261,0.3645251396648045
+Soft_Skills,Data Analyst,Communication,244,0.33936022253129344
+Soft_Skills,Data Analyst,Creativity,226,0.3143254520166898
+Soft_Skills,Data Analyst,Leadership,257,0.3574408901251738
+Soft_Skills,Data Analyst,Problem Solving,231,0.32127955493741306
+Soft_Skills,Data Analyst,Teamwork,234,0.325452016689847
+Soft_Skills,Data Analyst,Time Management,261,0.36300417246175243
+Soft_Skills,Data Scientist,Communication,252,0.35195530726256985
+Soft_Skills,Data Scientist,Creativity,230,0.32122905027932963
+Soft_Skills,Data Scientist,Leadership,241,0.3365921787709497
+Soft_Skills,Data Scientist,Problem Solving,251,0.3505586592178771
+Soft_Skills,Data Scientist,Teamwork,237,0.33100558659217877
+Soft_Skills,Data Scientist,Time Management,243,0.3393854748603352
+Soft_Skills,Deep Learning Engineer,Communication,231,0.3235294117647059
+Soft_Skills,Deep Learning Engineer,Creativity,231,0.3235294117647059
+Soft_Skills,Deep Learning Engineer,Leadership,240,0.33613445378151263
+Soft_Skills,Deep Learning Engineer,Problem Solving,225,0.31512605042016806
+Soft_Skills,Deep Learning Engineer,Teamwork,238,0.3333333333333333
+Soft_Skills,Deep Learning Engineer,Time Management,251,0.35154061624649857
+Soft_Skills,Digital Marketing Specialist,Communication,232,0.3286118980169972
+Soft_Skills,Digital Marketing Specialist,Creativity,259,0.3668555240793201
+Soft_Skills,Digital Marketing Specialist,Leadership,242,0.34277620396600567
+Soft_Skills,Digital Marketing Specialist,Problem Solving,213,0.301699716713881
+Soft_Skills,Digital Marketing Specialist,Teamwork,231,0.3271954674220963
+Soft_Skills,Digital Marketing Specialist,Time Management,225,0.31869688385269124
+Soft_Skills,Ethical Hacker,Communication,199,0.2888243831640058
+Soft_Skills,Ethical Hacker,Creativity,231,0.3352685050798258
+Soft_Skills,Ethical Hacker,Leadership,220,0.3193033381712627
+Soft_Skills,Ethical Hacker,Problem Solving,245,0.3555878084179971
+Soft_Skills,Ethical Hacker,Teamwork,234,0.33962264150943394
+Soft_Skills,Ethical Hacker,Time Management,238,0.3454281567489115
+Soft_Skills,Frontend Developer,Communication,207,0.35813148788927335
+Soft_Skills,Frontend Developer,Creativity,213,0.3685121107266436
+Soft_Skills,Frontend Developer,Leadership,194,0.3356401384083045
+Soft_Skills,Frontend Developer,Problem Solving,166,0.28719723183391005
+Soft_Skills,Frontend Developer,Teamwork,196,0.3391003460207612
+Soft_Skills,Frontend Developer,Time Management,199,0.34429065743944637
+Soft_Skills,Full Stack Developer,Communication,198,0.35547576301615796
+Soft_Skills,Full Stack Developer,Creativity,202,0.362657091561939
+Soft_Skills,Full Stack Developer,Leadership,196,0.3518850987432675
+Soft_Skills,Full Stack Developer,Problem Solving,168,0.3016157989228007
+Soft_Skills,Full Stack Developer,Teamwork,189,0.3393177737881508
+Soft_Skills,Full Stack Developer,Time Management,179,0.3213644524236984
+Soft_Skills,Graphic Designer,Communication,236,0.3460410557184751
+Soft_Skills,Graphic Designer,Creativity,219,0.32111436950146627
+Soft_Skills,Graphic Designer,Leadership,221,0.32404692082111436
+Soft_Skills,Graphic Designer,Problem Solving,230,0.33724340175953077
+Soft_Skills,Graphic Designer,Teamwork,224,0.3284457478005865
+Soft_Skills,Graphic Designer,Time Management,225,0.32991202346041054
+Soft_Skills,Machine Learning Engineer,Communication,220,0.31383737517831667
+Soft_Skills,Machine Learning Engineer,Creativity,229,0.32667617689015693
+Soft_Skills,Machine Learning Engineer,Leadership,245,0.34950071326676174
+Soft_Skills,Machine Learning Engineer,Problem Solving,245,0.34950071326676174
+Soft_Skills,Machine Learning Engineer,Teamwork,238,0.33951497860199714
+Soft_Skills,Machine Learning Engineer,Time Management,222,0.3166904422253923
+Soft_Skills,Marketing Executive,Communication,256,0.33464052287581697
+Soft_Skills,Marketing Executive,Creativity,263,0.3437908496732026
+Soft_Skills,Marketing Executive,Leadership,264,0.34509803921568627
+Soft_Skills,Marketing Executive,Problem Solving,242,0.31633986928104574
+Soft_Skills,Marketing Executive,Teamwork,240,0.3137254901960784
+Soft_Skills,Marketing Executive,Time Management,264,0.34509803921568627
+Soft_Skills,Operations Manager,Communication,248,0.3547925608011445
+Soft_Skills,Operations Manager,Creativity,220,0.3147353361945637
+Soft_Skills,Operations Manager,Leadership,218,0.31187410586552217
+Soft_Skills,Operations Manager,Problem Solving,242,0.34620886981402005
+Soft_Skills,Operations Manager,Teamwork,224,0.32045779685264664
+Soft_Skills,Operations Manager,Time Management,240,0.34334763948497854
+Soft_Skills,Product Designer,Communication,224,0.3137254901960784
+Soft_Skills,Product Designer,Creativity,227,0.3179271708683473
+Soft_Skills,Product Designer,Leadership,229,0.32072829131652664
+Soft_Skills,Product Designer,Problem Solving,217,0.30392156862745096
+Soft_Skills,Product Designer,Teamwork,229,0.32072829131652664
+Soft_Skills,Product Designer,Time Management,267,0.3739495798319328
+Soft_Skills,Project Manager,Communication,228,0.3149171270718232
+Soft_Skills,Project Manager,Creativity,262,0.36187845303867405
+Soft_Skills,Project Manager,Leadership,249,0.34392265193370164
+Soft_Skills,Project Manager,Problem Solving,237,0.32734806629834257
+Soft_Skills,Project Manager,Teamwork,233,0.3218232044198895
+Soft_Skills,Project Manager,Time Management,245,0.3383977900552486
+Soft_Skills,SEO Analyst,Communication,243,0.3389121338912134
+Soft_Skills,SEO Analyst,Creativity,238,0.3319386331938633
+Soft_Skills,SEO Analyst,Leadership,254,0.3542538354253835
+Soft_Skills,SEO Analyst,Problem Solving,247,0.34449093444909346
+Soft_Skills,SEO Analyst,Teamwork,253,0.3528591352859135
+Soft_Skills,SEO Analyst,Time Management,232,0.32357043235704325
+Soft_Skills,Security Engineer,Communication,242,0.3333333333333333
+Soft_Skills,Security Engineer,Creativity,242,0.3333333333333333
+Soft_Skills,Security Engineer,Leadership,227,0.31267217630853994
+Soft_Skills,Security Engineer,Problem Solving,242,0.3333333333333333
+Soft_Skills,Security Engineer,Teamwork,262,0.3608815426997245
+Soft_Skills,Security Engineer,Time Management,244,0.33608815426997246
+Soft_Skills,Software Engineer,Communication,170,0.3346456692913386
+Soft_Skills,Software Engineer,Creativity,156,0.30708661417322836
+Soft_Skills,Software Engineer,Leadership,174,0.3425196850393701
+Soft_Skills,Software Engineer,Problem Solving,170,0.3346456692913386
+Soft_Skills,Software Engineer,Teamwork,158,0.3110236220472441
+Soft_Skills,Software Engineer,Time Management,186,0.3661417322834646
+Soft_Skills,UI/UX Designer,Communication,233,0.34014598540145985
+Soft_Skills,UI/UX Designer,Creativity,240,0.35036496350364965
+Soft_Skills,UI/UX Designer,Leadership,231,0.3372262773722628
+Soft_Skills,UI/UX Designer,Problem Solving,220,0.32116788321167883
+Soft_Skills,UI/UX Designer,Teamwork,221,0.32262773722627736
+Soft_Skills,UI/UX Designer,Time Management,220,0.32116788321167883
+Technical_Skills,AI Researcher,C++,154,0.2238372093023256
+Technical_Skills,AI Researcher,Data Analysis,150,0.2180232558139535
+Technical_Skills,AI Researcher,HTML/CSS,145,0.21075581395348839
+Technical_Skills,AI Researcher,Java,146,0.21220930232558138
+Technical_Skills,AI Researcher,JavaScript,155,0.22529069767441862
+Technical_Skills,AI Researcher,Node.js,155,0.22529069767441862
+Technical_Skills,AI Researcher,Python,138,0.2005813953488372
+Technical_Skills,AI Researcher,React,158,0.22965116279069767
+Technical_Skills,AI Researcher,SQL,165,0.23982558139534885
+Technical_Skills,Backend Developer,C++,129,0.23118279569892472
+Technical_Skills,Backend Developer,Data Analysis,132,0.23655913978494625
+Technical_Skills,Backend Developer,HTML/CSS,136,0.24372759856630824
+Technical_Skills,Backend Developer,Java,128,0.22939068100358423
+Technical_Skills,Backend Developer,JavaScript,111,0.1989247311827957
+Technical_Skills,Backend Developer,Node.js,124,0.2222222222222222
+Technical_Skills,Backend Developer,Python,137,0.24551971326164876
+Technical_Skills,Backend Developer,React,134,0.24014336917562723
+Technical_Skills,Backend Developer,SQL,119,0.2132616487455197
+Technical_Skills,Business Analyst,C++,145,0.20567375886524822
+Technical_Skills,Business Analyst,Data Analysis,165,0.23404255319148937
+Technical_Skills,Business Analyst,HTML/CSS,164,0.2326241134751773
+Technical_Skills,Business Analyst,Java,149,0.21134751773049645
+Technical_Skills,Business Analyst,JavaScript,164,0.2326241134751773
+Technical_Skills,Business Analyst,Node.js,153,0.2170212765957447
+Technical_Skills,Business Analyst,Python,168,0.23829787234042554
+Technical_Skills,Business Analyst,React,178,0.2524822695035461
+Technical_Skills,Business Analyst,SQL,146,0.20709219858156028
+Technical_Skills,Business Manager,C++,156,0.21282401091405184
+Technical_Skills,Business Manager,Data Analysis,181,0.24693042291950887
+Technical_Skills,Business Manager,HTML/CSS,171,0.23328785811732605
+Technical_Skills,Business Manager,Java,154,0.2100954979536153
+Technical_Skills,Business Manager,JavaScript,161,0.21964529331514324
+Technical_Skills,Business Manager,Node.js,156,0.21282401091405184
+Technical_Skills,Business Manager,Python,171,0.23328785811732605
+Technical_Skills,Business Manager,React,147,0.20054570259208732
+Technical_Skills,Business Manager,SQL,180,0.24556616643929058
+Technical_Skills,Cybersecurity Analyst,C++,155,0.2164804469273743
+Technical_Skills,Cybersecurity Analyst,Data Analysis,152,0.2122905027932961
+Technical_Skills,Cybersecurity Analyst,HTML/CSS,164,0.22905027932960895
+Technical_Skills,Cybersecurity Analyst,Java,172,0.24022346368715083
+Technical_Skills,Cybersecurity Analyst,JavaScript,159,0.22206703910614525
+Technical_Skills,Cybersecurity Analyst,Node.js,158,0.2206703910614525
+Technical_Skills,Cybersecurity Analyst,Python,147,0.2053072625698324
+Technical_Skills,Cybersecurity Analyst,React,155,0.2164804469273743
+Technical_Skills,Cybersecurity Analyst,SQL,170,0.23743016759776536
+Technical_Skills,Data Analyst,C++,156,0.21696801112656466
+Technical_Skills,Data Analyst,Data Analysis,163,0.2267037552155772
+Technical_Skills,Data Analyst,HTML/CSS,152,0.2114047287899861
+Technical_Skills,Data Analyst,Java,166,0.23087621696801114
+Technical_Skills,Data Analyst,JavaScript,163,0.2267037552155772
+Technical_Skills,Data Analyst,Node.js,168,0.2336578581363004
+Technical_Skills,Data Analyst,Python,157,0.21835883171070933
+Technical_Skills,Data Analyst,React,147,0.20445062586926285
+Technical_Skills,Data Analyst,SQL,156,0.21696801112656466
+Technical_Skills,Data Scientist,C++,172,0.24022346368715083
+Technical_Skills,Data Scientist,Data Analysis,160,0.22346368715083798
+Technical_Skills,Data Scientist,HTML/CSS,154,0.21508379888268156
+Technical_Skills,Data Scientist,Java,159,0.22206703910614525
+Technical_Skills,Data Scientist,JavaScript,153,0.21368715083798884
+Technical_Skills,Data Scientist,Node.js,132,0.18435754189944134
+Technical_Skills,Data Scientist,Python,150,0.20949720670391062
+Technical_Skills,Data Scientist,React,147,0.2053072625698324
+Technical_Skills,Data Scientist,SQL,158,0.2206703910614525
+Technical_Skills,Deep Learning Engineer,C++,150,0.21008403361344538
+Technical_Skills,Deep Learning Engineer,Data Analysis,140,0.19607843137254902
+Technical_Skills,Deep Learning Engineer,HTML/CSS,172,0.24089635854341737
+Technical_Skills,Deep Learning Engineer,Java,163,0.22829131652661064
+Technical_Skills,Deep Learning Engineer,JavaScript,149,0.20868347338935575
+Technical_Skills,Deep Learning Engineer,Node.js,146,0.20448179271708683
+Technical_Skills,Deep Learning Engineer,Python,153,0.21428571428571427
+Technical_Skills,Deep Learning Engineer,React,165,0.23109243697478993
+Technical_Skills,Deep Learning Engineer,SQL,163,0.22829131652661064
+Technical_Skills,Digital Marketing Specialist,C++,170,0.24079320113314448
+Technical_Skills,Digital Marketing Specialist,Data Analysis,161,0.22804532577903683
+Technical_Skills,Digital Marketing Specialist,HTML/CSS,166,0.23512747875354106
+Technical_Skills,Digital Marketing Specialist,Java,135,0.19121813031161472
+Technical_Skills,Digital Marketing Specialist,JavaScript,177,0.2507082152974504
+Technical_Skills,Digital Marketing Specialist,Node.js,156,0.22096317280453256
+Technical_Skills,Digital Marketing Specialist,Python,134,0.18980169971671387
+Technical_Skills,Digital Marketing Specialist,React,147,0.20821529745042494
+Technical_Skills,Digital Marketing Specialist,SQL,156,0.22096317280453256
+Technical_Skills,Ethical Hacker,C++,170,0.2467343976777939
+Technical_Skills,Ethical Hacker,Data Analysis,151,0.21915820029027577
+Technical_Skills,Ethical Hacker,HTML/CSS,140,0.20319303338171263
+Technical_Skills,Ethical Hacker,Java,164,0.23802612481857766
+Technical_Skills,Ethical Hacker,JavaScript,144,0.20899854862119013
+Technical_Skills,Ethical Hacker,Node.js,140,0.20319303338171263
+Technical_Skills,Ethical Hacker,Python,151,0.21915820029027577
+Technical_Skills,Ethical Hacker,React,140,0.20319303338171263
+Technical_Skills,Ethical Hacker,SQL,163,0.2365747460087083
+Technical_Skills,Frontend Developer,C++,120,0.20761245674740483
+Technical_Skills,Frontend Developer,Data Analysis,137,0.2370242214532872
+Technical_Skills,Frontend Developer,HTML/CSS,124,0.21453287197231835
+Technical_Skills,Frontend Developer,Java,125,0.21626297577854672
+Technical_Skills,Frontend Developer,JavaScript,140,0.2422145328719723
+Technical_Skills,Frontend Developer,Node.js,156,0.2698961937716263
+Technical_Skills,Frontend Developer,Python,124,0.21453287197231835
+Technical_Skills,Frontend Developer,React,128,0.22145328719723184
+Technical_Skills,Frontend Developer,SQL,121,0.2093425605536332
+Technical_Skills,Full Stack Developer,C++,139,0.2495511669658887
+Technical_Skills,Full Stack Developer,Data Analysis,125,0.2244165170556553
+Technical_Skills,Full Stack Developer,HTML/CSS,120,0.21543985637342908
+Technical_Skills,Full Stack Developer,Java,120,0.21543985637342908
+Technical_Skills,Full Stack Developer,JavaScript,111,0.1992818671454219
+Technical_Skills,Full Stack Developer,Node.js,129,0.23159784560143626
+Technical_Skills,Full Stack Developer,Python,132,0.236983842010772
+Technical_Skills,Full Stack Developer,React,116,0.20825852782764812
+Technical_Skills,Full Stack Developer,SQL,118,0.2118491921005386
+Technical_Skills,Graphic Designer,C++,162,0.2375366568914956
+Technical_Skills,Graphic Designer,Data Analysis,143,0.20967741935483872
+Technical_Skills,Graphic Designer,HTML/CSS,152,0.22287390029325513
+Technical_Skills,Graphic Designer,Java,146,0.21407624633431085
+Technical_Skills,Graphic Designer,JavaScript,156,0.2287390029325513
+Technical_Skills,Graphic Designer,Node.js,146,0.21407624633431085
+Technical_Skills,Graphic Designer,Python,140,0.20527859237536658
+Technical_Skills,Graphic Designer,React,149,0.218475073313783
+Technical_Skills,Graphic Designer,SQL,150,0.21994134897360704
+Technical_Skills,Machine Learning Engineer,C++,160,0.2282453637660485
+Technical_Skills,Machine Learning Engineer,Data Analysis,150,0.21398002853067047
+Technical_Skills,Machine Learning Engineer,HTML/CSS,158,0.2253922967189729
+Technical_Skills,Machine Learning Engineer,Java,145,0.20684736091298145
+Technical_Skills,Machine Learning Engineer,JavaScript,148,0.21112696148359486
+Technical_Skills,Machine Learning Engineer,Node.js,151,0.21540656205420827
+Technical_Skills,Machine Learning Engineer,Python,157,0.2239657631954351
+Technical_Skills,Machine Learning Engineer,React,157,0.2239657631954351
+Technical_Skills,Machine Learning Engineer,SQL,158,0.2253922967189729
+Technical_Skills,Marketing Executive,C++,168,0.2196078431372549
+Technical_Skills,Marketing Executive,Data Analysis,188,0.2457516339869281
+Technical_Skills,Marketing Executive,HTML/CSS,171,0.2235294117647059
+Technical_Skills,Marketing Executive,Java,166,0.2169934640522876
+Technical_Skills,Marketing Executive,JavaScript,148,0.1934640522875817
+Technical_Skills,Marketing Executive,Node.js,178,0.2326797385620915
+Technical_Skills,Marketing Executive,Python,177,0.23137254901960785
+Technical_Skills,Marketing Executive,React,172,0.22483660130718955
+Technical_Skills,Marketing Executive,SQL,176,0.23006535947712417
+Technical_Skills,Operations Manager,C++,151,0.21602288984263232
+Technical_Skills,Operations Manager,Data Analysis,144,0.20600858369098712
+Technical_Skills,Operations Manager,HTML/CSS,161,0.23032904148783978
+Technical_Skills,Operations Manager,Java,132,0.1888412017167382
+Technical_Skills,Operations Manager,JavaScript,175,0.2503576537911302
+Technical_Skills,Operations Manager,Node.js,140,0.20028612303290416
+Technical_Skills,Operations Manager,Python,171,0.2446351931330472
+Technical_Skills,Operations Manager,React,156,0.22317596566523606
+Technical_Skills,Operations Manager,SQL,156,0.22317596566523606
+Technical_Skills,Product Designer,C++,176,0.24649859943977592
+Technical_Skills,Product Designer,Data Analysis,132,0.18487394957983194
+Technical_Skills,Product Designer,HTML/CSS,160,0.22408963585434175
+Technical_Skills,Product Designer,Java,155,0.21708683473389356
+Technical_Skills,Product Designer,JavaScript,155,0.21708683473389356
+Technical_Skills,Product Designer,Node.js,168,0.23529411764705882
+Technical_Skills,Product Designer,Python,144,0.20168067226890757
+Technical_Skills,Product Designer,React,183,0.25630252100840334
+Technical_Skills,Product Designer,SQL,172,0.24089635854341737
+Technical_Skills,Project Manager,C++,150,0.20718232044198895
+Technical_Skills,Project Manager,Data Analysis,126,0.17403314917127072
+Technical_Skills,Project Manager,HTML/CSS,163,0.22513812154696133
+Technical_Skills,Project Manager,Java,164,0.2265193370165746
+Technical_Skills,Project Manager,JavaScript,173,0.23895027624309392
+Technical_Skills,Project Manager,Node.js,163,0.22513812154696133
+Technical_Skills,Project Manager,Python,158,0.21823204419889503
+Technical_Skills,Project Manager,React,150,0.20718232044198895
+Technical_Skills,Project Manager,SQL,166,0.2292817679558011
+Technical_Skills,SEO Analyst,C++,155,0.21617852161785217
+Technical_Skills,SEO Analyst,Data Analysis,149,0.20781032078103207
+Technical_Skills,SEO Analyst,HTML/CSS,169,0.23570432357043236
+Technical_Skills,SEO Analyst,Java,156,0.2175732217573222
+Technical_Skills,SEO Analyst,JavaScript,137,0.1910739191073919
+Technical_Skills,SEO Analyst,Node.js,142,0.19804741980474197
+Technical_Skills,SEO Analyst,Python,170,0.23709902370990238
+Technical_Skills,SEO Analyst,React,171,0.2384937238493724
+Technical_Skills,SEO Analyst,SQL,154,0.21478382147838215
+Technical_Skills,Security Engineer,C++,163,0.22451790633608815
+Technical_Skills,Security Engineer,Data Analysis,167,0.23002754820936638
+Technical_Skills,Security Engineer,HTML/CSS,169,0.2327823691460055
+Technical_Skills,Security Engineer,Java,152,0.209366391184573
+Technical_Skills,Security Engineer,JavaScript,165,0.22727272727272727
+Technical_Skills,Security Engineer,Node.js,147,0.2024793388429752
+Technical_Skills,Security Engineer,Python,139,0.19146005509641872
+Technical_Skills,Security Engineer,React,167,0.23002754820936638
+Technical_Skills,Security Engineer,SQL,169,0.2327823691460055
+Technical_Skills,Software Engineer,C++,102,0.20078740157480315
+Technical_Skills,Software Engineer,Data Analysis,113,0.22244094488188976
+Technical_Skills,Software Engineer,HTML/CSS,121,0.23818897637795275
+Technical_Skills,Software Engineer,Java,110,0.21653543307086615
+Technical_Skills,Software Engineer,JavaScript,120,0.23622047244094488
+Technical_Skills,Software Engineer,Node.js,122,0.24015748031496062
+Technical_Skills,Software Engineer,Python,125,0.24606299212598426
+Technical_Skills,Software Engineer,React,114,0.22440944881889763
+Technical_Skills,Software Engineer,SQL,110,0.21653543307086615
+Technical_Skills,UI/UX Designer,C++,164,0.23941605839416058
+Technical_Skills,UI/UX Designer,Data Analysis,146,0.21313868613138687
+Technical_Skills,UI/UX Designer,HTML/CSS,154,0.22481751824817517
+Technical_Skills,UI/UX Designer,Java,139,0.2029197080291971
+Technical_Skills,UI/UX Designer,JavaScript,170,0.24817518248175183
+Technical_Skills,UI/UX Designer,Node.js,163,0.23795620437956205
+Technical_Skills,UI/UX Designer,Python,157,0.2291970802919708
+Technical_Skills,UI/UX Designer,React,163,0.23795620437956205
+Technical_Skills,UI/UX Designer,SQL,138,0.20145985401459854

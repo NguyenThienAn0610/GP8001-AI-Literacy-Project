@@ -1,0 +1,51 @@
+﻿column,rank,value,count,pct
+Country_of_Origin,1,Brazil,37751,0.12583666666666668
+Country_of_Origin,2,China,37728,0.12576
+Country_of_Origin,3,Germany,37511,0.12503666666666666
+Country_of_Origin,4,Pakistan,37470,0.1249
+Country_of_Origin,5,USA,37465,0.12488333333333333
+Country_of_Origin,6,India,37464,0.12488
+Country_of_Origin,7,Vietnam,37433,0.12477666666666666
+Country_of_Origin,8,Nigeria,37178,0.12392666666666667
+Education_Level,1,Bachelor's,120143,0.40047666666666665
+Education_Level,2,Master's,105023,0.35007666666666665
+Education_Level,3,PhD,44859,0.14953
+Education_Level,4,Diploma,29975,0.09991666666666667
+Field_of_Study,1,Arts,50144,0.16714666666666667
+Field_of_Study,2,Engineering,50098,0.16699333333333333
+Field_of_Study,3,IT,50091,0.16697
+Field_of_Study,4,Health,49932,0.16644
+Field_of_Study,5,Social Sciences,49916,0.16638666666666665
+Field_of_Study,6,Business,49819,0.16606333333333334
+Language_Proficiency,1,Intermediate,90133,0.30044333333333334
+Language_Proficiency,2,Advanced,90111,0.30037
+Language_Proficiency,3,Basic,59881,0.19960333333333333
+Language_Proficiency,4,Fluent,59875,0.19958333333333333
+Visa_Type,1,Student,119754,0.39918
+Visa_Type,2,Post-study,90340,0.3011333333333333
+Visa_Type,3,Work Visa,59834,0.19944666666666666
+Visa_Type,4,Permanent Residency,30072,0.10024
+Gender,1,Male,143890,0.47963333333333336
+Gender,2,Female,143850,0.4795
+Gender,3,Other,12260,0.04086666666666667
+University_Ranking,1,Medium,149847,0.49949
+University_Ranking,2,High,90581,0.3019366666666667
+University_Ranking,3,Low,59572,0.19857333333333332
+Region_of_Study,1,Australia,75233,0.25077666666666665
+Region_of_Study,2,EU,74966,0.24988666666666667
+Region_of_Study,3,UK,74901,0.24967
+Region_of_Study,4,Canada,74900,0.24966666666666668
+Internship_Experience,1,Yes,194710,0.6490333333333334
+Internship_Experience,2,No,105290,0.35096666666666665
+Employment_Status,1,Employed,156644,0.5221466666666666
+Employment_Status,2,Continuing Education,74617,0.24872333333333332
+Employment_Status,3,Unemployed,68739,0.22913
+Job_Sector,1,<Missing>,143356,0.47785333333333335
+Job_Sector,2,IT,19716,0.06572
+Job_Sector,3,Education,19711,0.06570333333333334
+Job_Sector,4,Other,19699,0.06566333333333334
+Job_Sector,5,Healthcare,19666,0.06555333333333334
+Job_Sector,6,Engineering,19590,0.0653
+Job_Sector,7,Retail,19467,0.06489
+Job_Sector,8,Consulting,19457,0.06485666666666667
+Job_Sector,9,Finance,19338,0.06446

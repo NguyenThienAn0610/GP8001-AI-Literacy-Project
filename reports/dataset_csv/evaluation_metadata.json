@@ -1,0 +1,37 @@
+{
+  "source": "data\\raw\\dataset.csv",
+  "raw_rows": 300000,
+  "labeled_rows": 156644,
+  "unlabeled_rows": 143356,
+  "target": "Job_Sector",
+  "classes": [
+    "Consulting",
+    "Education",
+    "Engineering",
+    "Finance",
+    "Healthcare",
+    "IT",
+    "Other",
+    "Retail"
+  ],
+  "feature_columns": [
+    "Country_of_Origin",
+    "Education_Level",
+    "Field_of_Study",
+    "Language_Proficiency",
+    "Visa_Type",
+    "Gender",
+    "University_Ranking",
+    "Region_of_Study",
+    "Age",
+    "Years_Since_Graduation",
+    "GPA",
+    "Internship_Experience"
+  ],
+  "excluded_post_outcome_columns": [
+    "Employment_Status",
+    "Salary"
+  ],
+  "cross_validation_folds": 5,
+  "random_seed": 42
+}

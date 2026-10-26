@@ -1,0 +1,9 @@
+﻿missing_columns,count,pct
+No missing values,6844,0.45626666666666665
+Certifications,3513,0.2342
+Past_Jobs_Internships,1391,0.09273333333333333
+Achievements,1382,0.09213333333333333
+"Certifications, Achievements",723,0.0482
+"Certifications, Past_Jobs_Internships",720,0.048
+"Past_Jobs_Internships, Achievements",284,0.018933333333333333
+"Certifications, Past_Jobs_Internships, Achievements",143,0.009533333333333333

@@ -1,0 +1,94 @@
+{
+  "source": "data\\raw\\Career_Path_Dataset_with_Career.csv",
+  "rows": 15000,
+  "columns": 19,
+  "numeric_columns": [
+    "Age",
+    "Grade_CGPA_Percentage"
+  ],
+  "categorical_columns": [
+    "Gender",
+    "Location",
+    "Highest_qualification",
+    "Stream",
+    "Current_Academic_Level",
+    "Technical_Skills",
+    "Soft_Skills",
+    "Languages_Known",
+    "Certifications",
+    "Fields_of_Interest",
+    "Preferred_Work_Style",
+    "Work_Type_Interest",
+    "Past_Jobs_Internships",
+    "Achievements",
+    "Skills_Gained",
+    "Willing_to_Relocate",
+    "Suggested_Career_Path"
+  ],
+  "multi_value_columns": [
+    "Certifications",
+    "Languages_Known",
+    "Soft_Skills",
+    "Technical_Skills"
+  ],
+  "configured_multi_value_columns_not_found": [],
+  "target": "Suggested_Career_Path",
+  "target_class_counts": {
+    "Marketing Executive": 765,
+    "Business Manager": 733,
+    "Security Engineer": 726,
+    "Project Manager": 724,
+    "Data Analyst": 719,
+    "SEO Analyst": 717,
+    "Data Scientist": 716,
+    "Cybersecurity Analyst": 716,
+    "Deep Learning Engineer": 714,
+    "Product Designer": 714,
+    "Digital Marketing Specialist": 706,
+    "Business Analyst": 705,
+    "Machine Learning Engineer": 701,
+    "Operations Manager": 699,
+    "Ethical Hacker": 689,
+    "AI Researcher": 688,
+    "UI/UX Designer": 685,
+    "Graphic Designer": 682,
+    "Frontend Developer": 578,
+    "Backend Developer": 558,
+    "Full Stack Developer": 557,
+    "Software Engineer": 508
+  },
+  "duplicates": {
+    "rows_in_duplicate_groups": 0,
+    "duplicate_rows_beyond_first": 0,
+    "feature_rows_in_duplicate_groups": 0,
+    "feature_profiles_with_conflicting_targets": 0
+  },
+  "association_matrix_columns": [
+    "Age",
+    "Gender",
+    "Location",
+    "Highest_qualification",
+    "Stream",
+    "Current_Academic_Level",
+    "Grade_CGPA_Percentage",
+    "Languages_Known",
+    "Certifications",
+    "Fields_of_Interest",
+    "Preferred_Work_Style",
+    "Work_Type_Interest",
+    "Past_Jobs_Internships",
+    "Achievements",
+    "Skills_Gained",
+    "Willing_to_Relocate",
+    "Suggested_Career_Path"
+  ],
+  "association_matrix_excluded_high_cardinality_columns": [
+    "Technical_Skills",
+    "Soft_Skills"
+  ],
+  "notes": {
+    "source_unchanged": true,
+    "text_analysis": "Leading/trailing whitespace trimmed; empty text treated as missing.",
+    "mixed_association_matrix": "Absolute Spearman for numeric-numeric, bias-corrected Cramer's V for categorical-categorical, and correlation ratio eta for mixed pairs."
+  }
+}

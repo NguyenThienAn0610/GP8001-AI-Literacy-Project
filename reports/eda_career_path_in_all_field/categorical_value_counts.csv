@@ -1,0 +1,106 @@
+﻿column,rank,value,count,pct
+Field,1,Education,667,0.07411111111111111
+Field,2,Chemistry,645,0.07166666666666667
+Field,3,Medicine,644,0.07155555555555555
+Field,4,Biology,612,0.068
+Field,5,Art,609,0.06766666666666667
+Field,6,Law,606,0.06733333333333333
+Field,7,Business,600,0.06666666666666667
+Field,8,Engineering,593,0.06588888888888889
+Field,9,Finance,592,0.06577777777777778
+Field,10,Marketing,590,0.06555555555555556
+Field,11,Computer Science,581,0.06455555555555556
+Field,12,Psychology,574,0.06377777777777778
+Field,13,Architecture,572,0.06355555555555556
+Field,14,Music,567,0.063
+Field,15,Physics,548,0.06088888888888889
+Career,1,Legal Secretary,124,0.013777777777777778
+Career,2,Financial Analyst,121,0.013444444444444445
+Career,3,AI Researcher,119,0.013222222222222222
+Career,4,Pharmacist,119,0.013222222222222222
+Career,5,Industrial-Organizational Psychologist,117,0.013
+Career,6,Mechanical Engineer,116,0.012888888888888889
+Career,7,Aerospace Engineer,116,0.012888888888888889
+Career,8,Special Education Teacher,115,0.012777777777777779
+Career,9,Biochemist,115,0.012777777777777779
+Career,10,Curriculum Developer,114,0.012666666666666666
+Career,11,Architect,113,0.012555555555555556
+Career,12,Chemist,112,0.012444444444444444
+Career,13,Conductor,112,0.012444444444444444
+Career,14,Psychologist,112,0.012444444444444444
+Career,15,Marketing Manager,110,0.012222222222222223
+Career,16,Judge,109,0.01211111111111111
+Career,17,Clinical Psychologist,109,0.01211111111111111
+Career,18,Education Administrator,108,0.012
+Career,19,Digital Marketing Specialist,108,0.012
+Career,20,Electrical Engineer,108,0.012
+Career,21,Urban Planner,106,0.011777777777777778
+Career,22,Inorganic Chemist,106,0.011777777777777778
+Career,23,Web Developer,105,0.011666666666666667
+Career,24,Legal Analyst,104,0.011555555555555555
+Career,25,Risk Analyst,104,0.011555555555555555
+Career,26,Lawyer,104,0.011555555555555555
+Career,27,Brand Manager,104,0.011555555555555555
+Career,28,Interior Designer,103,0.011444444444444445
+Career,29,Market Research Analyst,103,0.011444444444444445
+Career,30,Chemical Engineer,103,0.011444444444444445
+Career,31,Data Scientist,103,0.011444444444444445
+Career,32,Advertising Manager,103,0.011444444444444445
+Career,33,Human Resources Specialist,103,0.011444444444444445
+Career,34,Surgeon,102,0.011333333333333334
+Career,35,Biologist,102,0.011333333333333334
+Career,36,Musician,102,0.011333333333333334
+Career,37,Art Therapist,101,0.011222222222222222
+Career,38,Software Developer,101,0.011222222222222222
+Career,39,Accountant,100,0.011111111111111112
+Career,40,Counselor,100,0.011111111111111112
+Career,41,Paralegal,100,0.011111111111111112
+Career,42,Physicist,100,0.011111111111111112
+Career,43,Dentist,100,0.011111111111111112
+Career,44,School Counselor,100,0.011111111111111112
+Career,45,Illustrator,99,0.011
+Career,46,Nurse,99,0.011
+Career,47,Teacher,99,0.011
+Career,48,Animator,99,0.011
+Career,49,Biomedical Engineer,99,0.011
+Career,50,Acoustics Specialist,98,0.010888888888888889
+Career,51,Legal Consultant,98,0.010888888888888889
+Career,52,Architectural Technologist,98,0.010888888888888889
+Career,53,Organic Chemist,97,0.010777777777777778
+Career,54,Nuclear Physicist,97,0.010777777777777778
+Career,55,Construction Manager,97,0.010777777777777778
+Career,56,Quantum Physicist,97,0.010777777777777778
+Career,57,Composer,97,0.010777777777777778
+Career,58,Physician Assistant,97,0.010777777777777778
+Career,59,Physical Chemist,96,0.010666666666666666
+Career,60,Credit Analyst,96,0.010666666666666666
+Career,61,Graphic Designer,95,0.010555555555555556
+Career,62,Doctor,95,0.010555555555555556
+Career,63,Zoologist,95,0.010555555555555556
+Career,64,Principal,95,0.010555555555555556
+Career,65,Civil Engineer,94,0.010444444444444444
+Career,66,Marketing Specialist,94,0.010444444444444444
+Career,67,Art Director,93,0.010333333333333333
+Career,68,Cybersecurity Analyst,93,0.010333333333333333
+Career,69,Game Developer,93,0.010333333333333333
+Career,70,Ecologist,93,0.010333333333333333
+Career,71,Entrepreneur,93,0.010333333333333333
+Career,72,Artist,92,0.010222222222222223
+Career,73,Music Teacher,92,0.010222222222222223
+Career,74,Forensic Psychologist,92,0.010222222222222223
+Career,75,Analytical Chemist,92,0.010222222222222223
+Career,76,Landscape Architect,92,0.010222222222222223
+Career,77,Manager,91,0.01011111111111111
+Career,78,Astronomer,91,0.01011111111111111
+Career,79,Fluid Mechanics Engineer,91,0.01011111111111111
+Career,80,School Psychologist,90,0.01
+Career,81,Microbiologist,89,0.009888888888888888
+Career,82,Actuary,88,0.009777777777777778
+Career,83,Social Media Manager,88,0.009777777777777778
+Career,84,Financial Controller,86,0.009555555555555555
+Career,85,Investment Banker,85,0.009444444444444445
+Career,86,Music Therapist,85,0.009444444444444445
+Career,87,Geneticist,85,0.009444444444444445
+Career,88,Biotechnologist,83,0.009222222222222222
+Career,89,Financial Advisor,79,0.008777777777777778
+Career,90,Sound Engineer,77,0.008555555555555556

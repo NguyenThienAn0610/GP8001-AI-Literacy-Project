@@ -1,0 +1,15 @@
+﻿feature,feature_type,measure,association,unique_values
+Salary,numeric,correlation_ratio_eta,0.009225099716815031,60490
+Years_Since_Graduation,numeric,correlation_ratio_eta,0.00819999575633396,10
+Age,numeric,correlation_ratio_eta,0.007749332203041719,18
+GPA,numeric,correlation_ratio_eta,0.0050155547961834275,325
+Gender,categorical,bias_corrected_cramers_v,0.004016058285226026,3
+Visa_Type,categorical,bias_corrected_cramers_v,0.0030537177361308846,4
+Field_of_Study,categorical,bias_corrected_cramers_v,0.0029819781561195987,6
+Education_Level,categorical,bias_corrected_cramers_v,0.002773353825686854,4
+Country_of_Origin,categorical,bias_corrected_cramers_v,0.0008078867340201158,8
+Language_Proficiency,categorical,bias_corrected_cramers_v,0.0,4
+University_Ranking,categorical,bias_corrected_cramers_v,0.0,3
+Region_of_Study,categorical,bias_corrected_cramers_v,0.0,4
+Internship_Experience,categorical,bias_corrected_cramers_v,0.0,2
+Employment_Status,categorical,bias_corrected_cramers_v,0.0,3

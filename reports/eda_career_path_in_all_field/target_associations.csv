@@ -1,0 +1,17 @@
+﻿feature,feature_type,measure,association,unique_values
+Coding_Skills,numeric,correlation_ratio_eta,0.11479355445232192,5
+Analytical_Skills,numeric,correlation_ratio_eta,0.11112374661166954,5
+Networking_Skills,numeric,correlation_ratio_eta,0.10752622295280463,5
+Communication_Skills,numeric,correlation_ratio_eta,0.10642739650071452,5
+Problem_Solving_Skills,numeric,correlation_ratio_eta,0.10628928495453206,5
+Teamwork_Skills,numeric,correlation_ratio_eta,0.10525456755169198,5
+Leadership_Positions,numeric,correlation_ratio_eta,0.10467317711049991,2
+Presentation_Skills,numeric,correlation_ratio_eta,0.10367143558603044,5
+Internships,numeric,correlation_ratio_eta,0.10227047409984175,3
+Extracurricular_Activities,numeric,correlation_ratio_eta,0.10054002518145341,10
+GPA,numeric,correlation_ratio_eta,0.1004179623890743,9000
+Field_Specific_Courses,numeric,correlation_ratio_eta,0.09736657922427049,10
+Industry_Certifications,numeric,correlation_ratio_eta,0.09447247077156175,2
+Projects,numeric,correlation_ratio_eta,0.09215096842710069,5
+Research_Experience,numeric,correlation_ratio_eta,0.09164228899542796,2
+Field,categorical,bias_corrected_cramers_v,0.0,15
